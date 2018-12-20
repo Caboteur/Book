@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 9vh;
+  max-height: 100px;
+  font-size: 1.25em;
+  font-family: 'Lora', serif;
+  font-family: 'Muli', sans-serif;
+}
+
+.navigationItem {
+  align-items: center;
+  margin: 0 1em;
+  margin-top: 2%;
+}
+
+.navigationItem a {
+  color: white;
+  text-decoration: none;
+  display: inherit;
+}
+
+.Mainlogo{
+  width: 8%;
+  position: absolute;
+  left: 3%;
+  width: 5%;
+}
+
+.navigation-mobile{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #112b4d;
+  z-index: 5;
+  top:0;
+  animation: fontbulger 1s;
+}
+
+.navigation-mobile-button{
+  z-index: 7;
+  position: absolute;
+}
+
+  .ham{
+    display: none;
+  }
+
+
+@media screen and (max-width: 640px) {
+
+  .Mainlogo{
+    width: 17%;
+    position: absolute;
+    left: 3%;
+  }
+
+  .ham {
+    display: inherit;
+    z-index: 6;
+    right: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate {
+    transform: rotate(45deg);
+  }
+  .hamRotate180 {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:white;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+  @keyframes fontbulger {
+    0% {
+      width: 0%
+    }
+    100% {
+        width: 100%
+    }
+  }
+
+
+  @keyframes fontSize {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+
+  .navigationItem a {
+    color: white;
+    text-decoration: none;
+    display: none;
+  }
+
+  .navigation-mobile-item{
+    display: inherit;
+    margin: auto;
+    text-align: center;
+    margin: 101px;
+    font-size: 30px;
+    color: black;
+      animation: fontSize 3s;
+  }
+
+  .navigation-mobile-item a{
+    color: white;
+  }
+
+
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.typewriter h1 {
+  width: 70%;
+  color:white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .typewriter h1 {
+    width: 70%;
+    color:white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    margin-top: 25%;
+  }
+}

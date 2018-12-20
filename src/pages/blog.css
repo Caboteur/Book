@@ -1,0 +1,22 @@
+.page-blog-wrapper{
+    height: 62vh;
+    width: 70%;
+    margin: auto;
+    max-width: 600px;
+}
+
+
+.plusButton{
+  position: absolute;
+  top: 50%;
+  right: 5%;;
+  width: 41px;
+}
+
+.lessButton{
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 41px;
+  transform: rotate(178deg);
+}

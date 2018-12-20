@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.title{
+  font-size: 42px;
+  color:white;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
+.controls {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 8px;
+  left: 5px;
+  width: 490px;
+  padding: 4px 4px;
+  border-radius: 4px;
+  background: rgba(30, 30, 30, .75);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+.img-container{
+  background: #ffffff;
+   box-shadow: rgb(255, 255, 255) 0px -1px 20px 3px;
+    cursor: pointer;
+   max-height:60vh;
+   margin:auto;
+    display:block;
+   margin-top:10%;
+}
+
+@media screen and (max-width: 640px) {
+  .title{
+    font-size: 23px;
+    color:white;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+  }
+
+  .img-container{
+    max-height: 100%;
+    margin-top:20%;
+   width: 75%;
+  }
+
+}
