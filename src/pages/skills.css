@@ -10,7 +10,7 @@ margin-top: 5%;
 @media screen and (max-width: 640px) {
   .skills-wrapper{
     border: 2px solid white;
-      max-width: 450px;
+      max-width: 400px;
       width: 85%;
       margin: auto;
       display: block;

@@ -56,7 +56,8 @@ export default class Opening extends React.Component {
 
         <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
         <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
-        <img style={{width: this.state.Wid}} className="img-opening" style={{marginTop: "20%"}} src={this.props.img2} />
+
+        <div className="button-link">Lien</div>
 
         </div>
 

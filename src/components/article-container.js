@@ -14,10 +14,11 @@ export default class RootIndex extends React.Component {
     return (
       <div name={this.props.num}>
 
-         {this.props.name === "Les Saisons" || this.props.name === "Les Saisons" ?
+         {this.props.name === "Les Saisons"  ?
           (
-     <video src={this.props.image} style={{cursor: "pointer" , boxShadow: "rgb(255, 255, 255) 0px -1px 20px 3px", height: "40vh", width:"78%", margin: "auto", display: "block", marginTop:"20%"}} title={this.props.title} type="video/mov" preload controls />
-    ) : (
+     <video className="video-container" src={this.props.image} title={this.props.title} type="video/mov" preload controls />
+    )  :  this.props.name === "Consilium" ?
+    <img className="img-w-container" src={this.props.image} /> : (
       <img className="img-container" src={this.props.image} />
     )}
 

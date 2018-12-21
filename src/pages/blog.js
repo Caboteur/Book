@@ -60,7 +60,7 @@ componentDidMount(){
       this.setState({View:this.state.MyList[this.state.Count - 1].node.title});
       this.setState({imgDes:this.state.MyList[this.state.Count -1 ].node.imgDescription[0].file.url});
       this.setState({imgDes2:this.state.MyList[this.state.Count -1 ].node.imgDescription[1].file.url});
-      this.setState({Object:this.state.MyList[this.state.Count - 1].node.description.childMarkdownRemark.html})
+      this.setState({Object:this.state.MyList[this.state.Count - 1].node.description.childMarkdownRemark.html.p})
     }
   }
 

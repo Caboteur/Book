@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.css'
-import logo from '../images/logo.svg'
+import logo from '../images/logoBeige.svg'
 
 class Navigation extends React.Component {
 
@@ -51,13 +51,13 @@ class Navigation extends React.Component {
            <img className="Mainlogo" to="/main" src={logo} />
            </Link>
           <li  className="navigationItem"  >
-            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Réalisations</Link>
+            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Réalisations</Link>
           </li>
           <li className="navigationItem" >
-            <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Skills</Link>
+            <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Skills</Link>
           </li>
           <li className="navigationItem" >
-            <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Contact</Link>
+            <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Contact</Link>
           </li>
         </ul>
 
@@ -82,7 +82,7 @@ class Navigation extends React.Component {
        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
        <path
        className="line middle"
-       d="m 30,50 h 40" />
+       d="m 30,50 h 30" />
        <path
        className="line bottom"
        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />

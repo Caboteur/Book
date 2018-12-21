@@ -55,6 +55,20 @@ padding: 79px;
   min-height: 100%;
 }
 
+.button-link{
+  color: #fff1e0;
+  border: 2px solid;
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.button-link:hover{
+  color: black;
+  background: #fff1e0;
+}
 
 @media screen and (max-width: 640px) {
 

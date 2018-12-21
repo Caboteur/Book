@@ -5,7 +5,7 @@
 
 .title{
   font-size: 42px;
-  color:white;
+  color:#fff1e0;
   text-align: center;
   font-family: 'Muli', sans-serif;
 }
@@ -39,7 +39,49 @@
    margin-top:10%;
 }
 
+.img-w-container{
+  width:67% ;
+  cursor: pointer;
+  box-shadow: rgb(255, 255, 255) 0px -1px 20px 3px;
+  width:90%;
+  margin: auto;
+  display: block;
+  margin-top:10%;
+  background: white;
+}
+
+.video-container{
+  width:67% ;
+  cursor: pointer;
+  box-shadow: rgb(255, 255, 255) 0px -1px 20px 3px;
+  width:90%;
+  margin: auto;
+  display: block;
+  margin-top:10%;
+}
+
 @media screen and (max-width: 640px) {
+  .img-w-container{
+    width:67% ;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px -1px 20px 3px;
+    width:90%;
+    margin: auto;
+    display: block;
+    margin-top:55%;
+    background: white;
+  }
+
+  .video-container{
+    width:67% ;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px -1px 20px 3px;
+    width:90%;
+    margin: auto;
+    display: block;
+    margin-top:55%;
+  }
+
   .title{
     font-size: 23px;
     color:white;

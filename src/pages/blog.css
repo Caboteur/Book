@@ -8,7 +8,7 @@
 
 .plusButton{
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 5%;;
   width: 41px;
 }
@@ -16,7 +16,7 @@
 .lessButton{
   position: absolute;
   left: 5%;
-  top: 50%;
+  top: 45%;
   width: 41px;
   transform: rotate(178deg);
 }

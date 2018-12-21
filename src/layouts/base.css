@@ -11,6 +11,12 @@ body{
 
 }
 
+
+#___gatsby{
+  max-width: 1600px;
+  max-height: 800px;
+}
+
 .logoLN{
   width: 5%;
   position: fixed;
@@ -57,6 +63,15 @@ body{
   max-width: 70px;
 }
 
+.logoMessenger:hover{
+  opacity: 0.5;
+}
+
+.logoLN:hover{
+  opacity: 0.5;
+}
+
+
 
 
 @media screen and (max-width: 640px) {
@@ -67,5 +82,19 @@ body{
   .logoLN{
     width: 13%;
   }
+
+  .img-wrapper{
+    width: 98%;
+    margin: auto;
+    display: block;
+    max-width: 900px;
+  }
+
+  .react-bodymovin-container svg {
+    width: 55% !important;
+    margin: auto !important;
+    display: block !important;
+  }
+
 
 }
