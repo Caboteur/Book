@@ -22,6 +22,7 @@ class BlogIndex extends React.Component {
       Object:"",
       imgDes:"https://www.combourg.com/images/vue-appli-avec-main.png",
       imgDes2:"https://www.combourg.com/images/vue-appli-avec-main.png",
+      link:"https://github.com/Caboteur/zone",
     }
   }
 
@@ -29,38 +30,41 @@ class BlogIndex extends React.Component {
 
 componentDidMount(){
     const posts = get(this, 'props.data.allContentfulBlogPost.edges');
-    console.log(posts)
     this.setState({MyList:posts});
     this.setState({View:posts[this.state.Count].node.title});
     this.setState({Img:posts[this.state.Count].node.heroImage.file.url});
     this.setState({imgDes:posts[this.state.Count].node.imgDescription[0].file.url});
     this.setState({imgDes2:posts[this.state.Count].node.imgDescription[1].file.url});
-    this.setState({Object:posts[this.state.Count].node.description.childMarkdownRemark.html})
+    this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
+    this.setState({link:posts[this.state.Count].node.lien})
+
         }
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
     if (this.state.Count < 4 ) {
-      console.log(this.state.Count)
     this.setState({Count: this.state.Count + 1});
     this.setState({Img:this.state.MyList[this.state.Count + 1].node.heroImage.file.url});
     this.setState({View:this.state.MyList[this.state.Count + 1].node.title});
     this.setState({imgDes:this.state.MyList[this.state.Count + 1].node.imgDescription[0].file.url});
     this.setState({imgDes2:this.state.MyList[this.state.Count + 1].node.imgDescription[1].file.url});
-    this.setState({Object:this.state.MyList[this.state.Count + 1].node.description.childMarkdownRemark.html})
+    this.setState({Object:this.state.MyList[this.state.Count + 1].node.firstdescription.content[0].content[0].value})
+    this.setState({link:this.state.MyList[this.state.Count + 1].node.lien})
+
     }
   }
 
   LessProject(){
 
     if (this.state.Count > 0) {
-      console.log(this.state.Count - 1);
       this.setState({Count: this.state.Count - 1});
       this.setState({Img:this.state.MyList[this.state.Count - 1].node.heroImage.file.url});
       this.setState({View:this.state.MyList[this.state.Count - 1].node.title});
       this.setState({imgDes:this.state.MyList[this.state.Count -1 ].node.imgDescription[0].file.url});
       this.setState({imgDes2:this.state.MyList[this.state.Count -1 ].node.imgDescription[1].file.url});
-      this.setState({Object:this.state.MyList[this.state.Count - 1].node.description.childMarkdownRemark.html.p})
+      this.setState({Object:this.state.MyList[this.state.Count - 1].node.firstdescription.content[0].content[0].value})
+      this.setState({link:this.state.MyList[this.state.Count - 1].node.lien})
+
     }
   }
 
@@ -70,6 +74,8 @@ componentDidMount(){
 
   OpenState(){
     this.setState({open:"inherit"})
+    console.log(this.state.link)
+
   }
 
   render() {
@@ -78,7 +84,7 @@ componentDidMount(){
     return (
       <div>
 
-       <Opening value={this.state.Count} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
+       <Opening value={this.state.Count} link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 
         <Helmet className="Helmet-title" title={siteTitle} />
 
@@ -104,37 +110,46 @@ export default BlogIndex
 
 export const pageQuery = graphql`
 query BlogIndexQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          imgDescription
-              {
-                id
-                  file {
-                    url
-                    fileName
-                    contentType
-                  }
-              }
-
-          heroImage {
+  allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+    edges {
+      node {
+        title
+        slug
+        publishDate(formatString: "MMMM Do, YYYY")
+        tags
+        imgDescription {
+          id
           file {
             url
             fileName
             contentType
           }
-          }
-          description {
-            childMarkdownRemark {
-              html
+        }
+        heroImage {
+        file {
+          url
+          fileName
+          contentType
+        }
+        }
+        firstdescription {
+          nodeType
+          content {
+            nodeType
+            content{
+              value
             }
+          }
+        }
+        lien
+        description {
+          childMarkdownRemark {
+            html
           }
         }
       }
     }
+  }
+
   }
 `

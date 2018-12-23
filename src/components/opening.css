@@ -68,6 +68,11 @@ padding: 79px;
 .button-link:hover{
   color: black;
   background: #fff1e0;
+   text-decoration: none;
+}
+
+a:-webkit-any-link {
+     text-decoration: none;
 }
 
 @media screen and (max-width: 640px) {

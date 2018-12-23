@@ -5,8 +5,8 @@ import Container from '../components/container'
 import Navigation from '../components/navigation.js'
 import Opening from '../components/opening'
 import styled from 'styled-components'
-import logoLN from '../images/logoLN.svg'
-import messenger from '../images/messenger.svg'
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
 import wave from '../images/wave.svg'
 import {Helmet} from "react-helmet";
 

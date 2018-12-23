@@ -9,7 +9,6 @@ export default class RootIndex extends React.Component {
 
   render() {
 
-    console.log(this.props.title)
 
     return (
       <div name={this.props.num}>
