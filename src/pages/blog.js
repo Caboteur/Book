@@ -50,7 +50,7 @@ componentDidMount(){
     this.setState({imgDes2:this.state.MyList[this.state.Count + 1].node.imgDescription[1].file.url});
     this.setState({Object:this.state.MyList[this.state.Count + 1].node.firstdescription.content[0].content[0].value})
     this.setState({link:this.state.MyList[this.state.Count + 1].node.lien})
-
+     this.setState({ imageStatus: "loaded" });
     }
   }
 
@@ -66,6 +66,8 @@ componentDidMount(){
       this.setState({link:this.state.MyList[this.state.Count - 1].node.lien})
 
     }
+
+
   }
 
   ChangeState(){
@@ -92,7 +94,7 @@ componentDidMount(){
 
         <div className="page-blog-wrapper" onClick={this.OpenState.bind(this)}>
 
-        <ArticleContainer name={this.state.View} title={this.state.Object} image={this.state.Img} />
+        <ArticleContainer name={this.state.View} counting={this.state.Count} title={this.state.Object} image={this.state.Img} />
 
         </div>
 
