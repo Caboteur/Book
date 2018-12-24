@@ -53,16 +53,30 @@ export default class Opening extends React.Component {
 
 
         <div className="div-para">{this.props.para}</div>
-        {this.props.tile === "Fler Culture" || this.props.tile === "Consilium" ?
+        {this.props.tile === "Fler Culture" ?
          (<div>
         <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
         <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
         </div>
-      ): (<div>
-        <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
-        <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
-        </div>
-      )
+      ):  this.props.tile === "Les Saisons" ?(<div>
+        <img style={{display:'none'}}  />
+        <img style={{display:'none'}}  />
+        </div>) :
+
+        this.props.tile === "Consilium" ?
+        (<div>
+          <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
+          <img style={{display:'none'}}  />
+          </div>
+        ) :
+
+        (
+          <div>
+            <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
+            <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
+            </div>
+        )
+
     }
 
         <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>

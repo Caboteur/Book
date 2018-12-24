@@ -8,6 +8,8 @@ import ArticleContainer from '../components/article-container.js'
 import styled from 'styled-components'
 import arrow from '../images/arrow.svg'
 import Opening from '../components/opening'
+import loading from '../images/loader.svg'
+
 
 class BlogIndex extends React.Component {
   constructor(){
@@ -23,6 +25,8 @@ class BlogIndex extends React.Component {
       imgDes:"https://www.combourg.com/images/vue-appli-avec-main.png",
       imgDes2:"https://www.combourg.com/images/vue-appli-avec-main.png",
       link:"https://github.com/Caboteur/zone",
+      display:"inherit",
+
     }
   }
 
@@ -37,12 +41,14 @@ componentDidMount(){
     this.setState({imgDes2:posts[this.state.Count].node.imgDescription[1].file.url});
     this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
     this.setState({link:posts[this.state.Count].node.lien})
-
+    setTimeout(()=> this.setState({display: "none" }), 500)
         }
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
     if (this.state.Count < 4 ) {
+    this.setState({display: "inherit" });
+    setTimeout(()=> this.setState({display: "none" }), 1000)
     this.setState({Count: this.state.Count + 1});
     this.setState({Img:this.state.MyList[this.state.Count + 1].node.heroImage.file.url});
     this.setState({View:this.state.MyList[this.state.Count + 1].node.title});
@@ -50,7 +56,7 @@ componentDidMount(){
     this.setState({imgDes2:this.state.MyList[this.state.Count + 1].node.imgDescription[1].file.url});
     this.setState({Object:this.state.MyList[this.state.Count + 1].node.firstdescription.content[0].content[0].value})
     this.setState({link:this.state.MyList[this.state.Count + 1].node.lien})
-     this.setState({ imageStatus: "loaded" });
+
     }
   }
 
@@ -85,6 +91,10 @@ componentDidMount(){
     console.log(this.state.imgDes)
     return (
       <div>
+
+      <div style={{display:this.state.display, position:"relative", height:"100vh", width:"100%",background:"#112b4d", zIndex: 1}}>
+      <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
+      </div>
 
        <Opening value={this.state.Count} link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 

@@ -36,10 +36,10 @@ class RootIndex extends React.Component {
 
       <div style={{display: this.state.display}}>  <ReactBodymovin options={bodymovinOptions} /> </div>
       <div className="typewriter">
-            <h1>Bonjour! Je m'appelle Adrien et je suis un developpeur et designer interractif.</h1>
+            <h1>Bienvenue sur mon portfolio, je suis developpeur et designer interractif</h1>
             </div>
          <img className="img-wrapper" src={Motionn} />
-         
+
     </div>
     )
   }
