@@ -22,15 +22,15 @@ class Contact extends React.Component {
          <div data-netlify-recaptcha />
 
         <p className="name">
-          <input name="bot-field"  name="name" type="text" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          <input name="bot-field"  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
         </p>
 
         <p className="email">
-          <input name="email" type="text" className="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+          <input type="email" name="email" className="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
         </p>
 
         <p className="text">
-          <textarea name="text" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+          <textarea name="text" type="text" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
         </p>
 
 
