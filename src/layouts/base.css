@@ -107,7 +107,13 @@ body{
 }
 
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1700px) {
+  .logoMessenger{
+    display: none;
+  }
 
+  .logoLN{
+    display: none;;
+  }
 
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.css'
 import logo from '../images/logoBeige.svg'
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
 
 class Navigation extends React.Component {
 
@@ -59,7 +61,12 @@ class Navigation extends React.Component {
           <li className="navigationItem" >
             <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Contact</Link>
           </li>
+                    <div className="container-nav-log">
+                      <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLNN' src={logoLN} /></a>
+                      <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessengerN' src={messenger} /> </a>
+                    </div>
         </ul>
+
 
          <div className="navigation-mobile" style={{display:this.state.face}}>
 

@@ -29,10 +29,10 @@
 
 .Mainlogo{
   width: 8%;
-  position: absolute;
-  left: 3%;
-  width: 5%;
-  max-width: 70px;
+left: 3%;
+width: 83%;
+max-width: 70px;
+float: left;
 }
 
 .navigation-mobile{
@@ -150,5 +150,39 @@
     color: #fff1e0;
   }
 
+
+}
+
+
+  .logoMessengerN{
+    display: none;
+  }
+
+  .logoLNN{
+    display: none;
+  }
+
+
+
+@media screen and (min-width: 1700px) {
+  .logoMessengerN{
+    width: 32%;
+    padding: 10px;
+    display: inherit;
+  }
+
+  .logoLNN{
+    height: 77%;
+    padding: 10px;
+    display: inherit;
+
+  }
+  .logoMessengerN:hover{
+    opacity: 0.5;
+  }
+
+  .logoLNN:hover{
+    opacity: 0.5;
+  }
 
 }
