@@ -34,7 +34,6 @@ class Contact extends React.Component {
           <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
         </p>
 
-        <div data-netlify-recaptcha="true"></div>
 
         <div className="submit">
           <input type="submit" value="SEND" id="button-blue"/>
