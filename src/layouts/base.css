@@ -105,3 +105,16 @@ body{
 
 
 }
+
+
+@media screen and (min-width: 2000px) {
+  .logoMessenger{
+    right: 15%;
+  }
+
+  .logoLN{
+   left:15%;  
+  }
+
+
+}

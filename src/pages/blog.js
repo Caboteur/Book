@@ -92,7 +92,7 @@ componentDidMount(){
     return (
       <div>
 
-      <div style={{display:this.state.display, position:"relative", height:"100vh", width:"100%",background:"#112b4d", zIndex: 1}}>
+      <div style={{display:this.state.display, height:"100vh", width:"100%",background:"#112b4d", zIndex: 1}}>
       <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
       </div>
 
