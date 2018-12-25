@@ -39,13 +39,16 @@ body{
   background: #112b4d;
   z-index: 10;
   top: 0;
-
+  right: 0;
+  left: 0;
 }
 
 .react-bodymovin-container svg{
   width: 25% !important;
   margin: auto !important;
   display: block !important;
+  max-width: 320px;
+
 }
 
 
@@ -73,7 +76,9 @@ body{
   opacity: 0.5;
 }
 
-
+.container-logo-bottom{
+  max-width: 1000px;
+}
 
 
 @media screen and (max-width: 640px) {
