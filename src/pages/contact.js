@@ -15,9 +15,11 @@ class Contact extends React.Component {
     <div>
     <div id="form-main">
     <div id="form-div">
-      <form className="form" id="form1"  name="contact-form"
-      method="post"
-      data-netlify="true">
+      <form className="form"
+            name="contact-form"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field">
 
 
         <p className="name">
@@ -29,9 +31,10 @@ class Contact extends React.Component {
         </p>
 
         <p className="text">
-          <textarea name="text" type="text" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+          <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
         </p>
 
+        <div data-netlify-recaptcha="true"></div>
 
         <div className="submit">
           <input type="submit" value="SEND" id="button-blue"/>
