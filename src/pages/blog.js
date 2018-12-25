@@ -48,7 +48,7 @@ componentDidMount(){
     const TotalNum = this.state.MyList.length
     if (this.state.Count < 4 ) {
     this.setState({display: "inherit" });
-    setTimeout(()=> this.setState({display: "none" }), 1000)
+    setTimeout(()=> this.setState({display: "none" }), 1700)
     this.setState({Count: this.state.Count + 1});
     this.setState({Img:this.state.MyList[this.state.Count + 1].node.heroImage.file.url});
     this.setState({View:this.state.MyList[this.state.Count + 1].node.title});
