@@ -23,7 +23,7 @@ class Contact extends React.Component {
 
 
         <p className="name">
-          <input name="bot-field"  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          <input  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
         </p>
 
         <p className="email">
