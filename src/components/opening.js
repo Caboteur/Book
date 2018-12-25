@@ -57,6 +57,8 @@ export default class Opening extends React.Component {
          (<div>
         <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
         <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
+        <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+
         </div>
       ):  this.props.tile === "Les Saisons" ?(<div>
         <img style={{display:'none'}}  />
@@ -67,6 +69,8 @@ export default class Opening extends React.Component {
         (<div>
           <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
           <img style={{display:'none'}}  />
+          <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+
           </div>
         ) :
 
@@ -74,12 +78,13 @@ export default class Opening extends React.Component {
           <div>
             <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
             <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
+            <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+
             </div>
         )
 
     }
 
-        <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
 
         </div>
 

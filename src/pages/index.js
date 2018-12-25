@@ -17,7 +17,7 @@ class RootIndex extends React.Component {
   }
 
   componentDidMount(){
-    setTimeout(()=>{const nav = () => navigate('/main');this.setState({display:'none'}) ; nav()}, 5200);
+    setTimeout(()=>{const nav = () => navigate('/main');this.setState({display:'none'}) ; nav()}, 6200);
   }
 
   render() {

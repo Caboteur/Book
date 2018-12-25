@@ -15,10 +15,14 @@ class Contact extends React.Component {
     <div>
     <div id="form-main">
     <div id="form-div">
-      <form className="form" id="form1">
+      <form className="form" id="form1"  name="contact-form"
+      method="post"
+      data-netlify="true">
+
+         <div data-netlify-recaptcha />
 
         <p className="name">
-          <input name="name" type="text" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          <input name="bot-field"  name="name" type="text" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
         </p>
 
         <p className="email">

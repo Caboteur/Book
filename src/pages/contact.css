@@ -54,15 +54,15 @@
 .feedback-input:focus{
 	background: #112b4d;
 	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
+	border: 3px solid rgb(255, 241, 224);
+	color: rgb(255, 241, 224);
 	outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
+	color:rgb(255, 241, 224);
+	border:rgb(255, 241, 224) solid 3px;
 }
 
 /* Icons ---------------------------------- */
