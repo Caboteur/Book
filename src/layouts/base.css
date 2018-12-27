@@ -108,6 +108,35 @@ body{
 
 
 @media screen and (min-width: 2000px) {
-  
+  .body{
+    border: 4px solid #fff1e0;
+    background: #112b4d;
+    height: 60VH;
+    margin: auto;
+    margin-top: 8%;
+  }
+
+  .container-logo-bottom {
+    max-width: 1000px;
+    margin: auto;
+}
+ html{
+   background: #112b4d;
+   }
+
+   .logoMessenger {
+    width: 6%;
+    position: inherit;
+    max-width: 70px;
+    float: right;
+}
+
+.logoLN {
+    width: 5%;
+    position: inherit; 
+    bottom: 8px;
+    left: 29%;
+    padding: 15px;
+}
 
 }
