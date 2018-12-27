@@ -114,6 +114,7 @@ body{
     height: 60VH;
     margin: auto;
     margin-top: 8%;
+    padding: 67px;
   }
 
   .container-logo-bottom {
@@ -133,7 +134,7 @@ body{
 
 .logoLN {
     width: 5%;
-    position: inherit; 
+    position: inherit;
     bottom: 8px;
     left: 29%;
     padding: 15px;
