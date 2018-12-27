@@ -108,7 +108,7 @@ body{
 
 
 @media screen and (min-width: 2000px) {
-  .body{
+  body{
     border: 4px solid #fff1e0;
     background: #112b4d;
     height: 60VH;
