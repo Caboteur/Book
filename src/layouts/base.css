@@ -116,6 +116,8 @@ body{
     padding: 15px;
     max-width: 100px;
     float: right;
+    margin-top: 150px;
+
   }
 
   .logoLN{
@@ -125,6 +127,7 @@ body{
     left: 8px;
     padding: 15px;
     max-width: 100px;
+    margin-top: 150px;
   }
 
   body{
