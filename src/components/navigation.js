@@ -48,10 +48,11 @@ class Navigation extends React.Component {
 
     return (
       <nav role="navigation">
+      <Link  to="/main" onClick={this.handleClick.bind(this)}>
+         <img className="Mainlogo" to="/main" src={logo} />
+         </Link>
         <ul className="navigation">
-        <Link  to="/main" onClick={this.handleClick.bind(this)}>
-           <img className="Mainlogo" to="/main" src={logo} />
-           </Link>
+
           <li  className="navigationItem"  >
             <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Réalisations</Link>
           </li>
@@ -61,12 +62,13 @@ class Navigation extends React.Component {
           <li className="navigationItem" >
             <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Contact</Link>
           </li>
-                    <div className="container-nav-log">
-                      <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLNN' src={logoLN} /></a>
-                      <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessengerN' src={messenger} /> </a>
-                    </div>
+
         </ul>
 
+        <div className="container-nav-log">
+          <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLNN' src={logoLN} /></a>
+          <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessengerN' src={messenger} /> </a>
+        </div>
 
          <div className="navigation-mobile" style={{display:this.state.face}}>
 

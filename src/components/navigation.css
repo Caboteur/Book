@@ -33,6 +33,7 @@ left: 3%;
 width: 83%;
 max-width: 70px;
 float: left;
+margin-top: 11px;;
 }
 
 .navigation-mobile{
@@ -162,9 +163,13 @@ float: left;
     display: none;
   }
 
+  .container-nav-log{
+    display: none;
+  }
 
 
-@media screen and (min-width: 1700px) {
+
+@media screen and (min-width: 2000px) {
   .logoMessengerN{
     width: 32%;
     padding: 10px;
@@ -172,7 +177,7 @@ float: left;
   }
 
   .logoLNN{
-    height: 77%;
+    height: 39%;
     padding: 10px;
     display: inherit;
 
@@ -183,6 +188,12 @@ float: left;
 
   .logoLNN:hover{
     opacity: 0.5;
+  }
+
+  .container-nav-log{
+    height: 119px;
+    width: 14%;
+    margin: auto;
   }
 
 }

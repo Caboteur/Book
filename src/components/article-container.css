@@ -37,6 +37,7 @@
    margin:auto;
     display:block;
    margin-top:10%;
+   max-height: 430px;
 }
 
 .img-w-container{
@@ -48,6 +49,8 @@
   display: block;
   margin-top:10%;
   background: white;
+  max-height: 430px;
+
 }
 
 .video-container{
@@ -58,6 +61,8 @@
   margin: auto;
   display: block;
   margin-top:10%;
+  max-height: 430px;
+
 }
 
 @media screen and (max-width: 640px) {

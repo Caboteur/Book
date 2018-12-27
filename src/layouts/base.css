@@ -107,7 +107,7 @@ body{
 }
 
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 2000px) {
   .logoMessenger{
     display: none;
   }
