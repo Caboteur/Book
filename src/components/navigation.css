@@ -166,34 +166,3 @@ margin-top: 11px;;
   .container-nav-log{
     display: none;
   }
-
-
-
-@media screen and (min-width: 2000px) {
-  .logoMessengerN{
-    width: 32%;
-    padding: 10px;
-    display: inherit;
-  }
-
-  .logoLNN{
-    height: 39%;
-    padding: 10px;
-    display: inherit;
-
-  }
-  .logoMessengerN:hover{
-    opacity: 0.5;
-  }
-
-  .logoLNN:hover{
-    opacity: 0.5;
-  }
-
-  .container-nav-log{
-    height: 119px;
-    width: 14%;
-    margin: auto;
-  }
-
-}
