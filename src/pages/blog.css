@@ -20,3 +20,28 @@
   width: 41px;
   transform: rotate(178deg);
 }
+
+
+
+@media screen and (min-width: 2000px) {
+
+  .plusButton{
+    position: absolute;
+    top: 45%;
+    right: 40%;;
+    width: 41px;
+  }
+
+  .lessButton{
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    width: 41px;
+    transform: rotate(178deg);
+  }
+  .page-blog-wrapper {
+    height: 0;
+
+}
+
+}

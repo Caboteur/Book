@@ -49,8 +49,6 @@ class Template extends React.Component {
 
             {children()}
 
-
-
             </div>
 
 

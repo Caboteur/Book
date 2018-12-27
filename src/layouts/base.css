@@ -80,6 +80,11 @@ body{
   max-width: 1000px;
 }
 
+.container-logo-bottom-max{
+  display: none;
+}
+
+
 
 @media screen and (max-width: 640px) {
   .logoMessenger{
@@ -138,6 +143,16 @@ body{
     bottom: 8px;
     left: 29%;
     padding: 15px;
+}
+
+.container-logo-bottom{
+  display: none;
+
+}
+
+
+.container-logo-bottom-max{
+  display: block;
 }
 
 }
