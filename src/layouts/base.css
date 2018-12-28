@@ -80,11 +80,6 @@ body{
   max-width: 1000px;
 }
 
-.container-logo-bottom-max{
-  display: none;
-}
-
-
 
 @media screen and (max-width: 640px) {
   .logoMessenger{
@@ -131,27 +126,26 @@ body{
    }
 
    .logoMessenger {
-    width: 6%;
-    position: inherit;
-    max-width: 70px;
-    float: right;
-}
+       width: 6%;
+       position: absolute;
+       max-width: 70px;
+       float: right;
+       bottom: 20%;
+       right: 29%;
+   }
 
-.logoLN {
-    width: 5%;
-    position: inherit;
-    bottom: 8px;
-    left: 29%;
-    padding: 15px;
-}
+   .logoLN {
+       width: 5%;
+       position: absolute;
+       bottom: 20%;
+       left: 29%;
+       padding: 15px;
+   }
+
+
+
 
 .container-logo-bottom{
-  display: none;
-
-}
-
-
-.container-logo-bottom-max{
   display: block;
 }
 

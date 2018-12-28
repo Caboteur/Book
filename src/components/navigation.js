@@ -63,19 +63,10 @@ class Navigation extends React.Component {
             <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Contact</Link>
           </li>
 
-          <div className="container-logo-bottom-max">
-
-          <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
-          <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger' src={messenger} /> </a>
-
-        </div>
 
         </ul>
 
-        <div className="container-nav-log">
-          <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLNN' src={logoLN} /></a>
-          <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessengerN' src={messenger} /> </a>
-        </div>
+
 
          <div className="navigation-mobile" style={{display:this.state.face}}>
 
