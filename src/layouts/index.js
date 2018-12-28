@@ -37,7 +37,7 @@ class Template extends React.Component {
           <meta charSet="utf-8" />
           <title>Adrien Blanchot</title>
           <link rel="icon"  href="./windowLogo.png" />
-          <meta name="description" content="Portfolio d'Adrien Blanchot, developpeur et designer interractif." />
+          <meta name="description" content="Adrien Blanchot, developpeur et designer interractif." />
           <meta name="theme-color" content="#112b4d" />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
       </Helmet>
