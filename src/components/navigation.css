@@ -33,7 +33,11 @@ left: 3%;
 width: 83%;
 max-width: 70px;
 float: left;
-margin-top: 11px;;
+margin-top: 11px;
+}
+
+.Mainlogo:hover{
+ opacity: 0.5;
 }
 
 .navigation-mobile{
