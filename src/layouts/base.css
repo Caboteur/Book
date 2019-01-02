@@ -106,24 +106,54 @@ body{
 
 }
 
+@media screen and (min-width: 1920px) {
 
-@media screen and (min-width: 1915px) {
-  body{
-    border: 4px solid #fff1e0;
-    background: #112b4d;
-    height: 60VH;
-    margin: auto;
-    margin-top: 8%;
-    padding: 67px;
-  }
-
-  .container-logo-bottom {
-    max-width: 1000px;
-    margin: auto;
+.img-wrapper{
+  width:50%;
 }
- html{
-   background: #112b4d;
-   }
+
+.img-container{
+  max-height: 100%;
+}
+
+.logoMessenger {
+    width: 6%;
+    position: absolute;
+    max-width: 70px;
+    float: right;
+    bottom: 17%;
+    right: 20%;
+}
+
+.logoLN {
+    width: 5%;
+    position: absolute;
+    bottom: 17%;
+    left: 20%;
+    padding: 15px;
+}
+
+body{
+  border: 4px solid #fff1e0;
+  background: #112b4d;
+  height: 60VH;
+  margin: auto;
+  margin-top: 8%;
+  padding: 67px;
+}
+
+.container-logo-bottom {
+  max-width: 1000px;
+  margin: auto;
+}
+html{
+ background: #112b4d;
+ }
+
+}
+
+
+@media screen and (min-width: 2000px) {
 
    .logoMessenger {
        width: 6%;

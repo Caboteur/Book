@@ -22,6 +22,24 @@
 }
 
 
+@media screen and (min-width: 1920px) {
+
+  .plusButton{
+    position: absolute;
+    top: 45%;
+    right: 30%;;
+    width: 41px;
+  }
+
+  .lessButton{
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    width: 41px;
+    transform: rotate(178deg);
+  }
+
+}
 
 @media screen and (min-width: 2000px) {
 
