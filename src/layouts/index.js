@@ -42,14 +42,7 @@ class Template extends React.Component {
           <meta name="theme-color" content="#112b4d" />
           <meta http-equiv="Content-Security-Policy" content="default-src https:" />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131686721-1"></script>
-          <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-131686721-1');
-          </script>
+          
 
       </Helmet>
 
