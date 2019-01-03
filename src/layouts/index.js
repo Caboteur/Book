@@ -42,8 +42,8 @@ class Template extends React.Component {
           <meta name="description" content="Adrien Blanchot, developpeur et designer interractif." />
           <meta name="theme-color" content="#112b4d" />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-          <meta property="og:image" content={cubeL}/>
-          <meta name="twitter:image" content={cubeL}/>
+          <meta property="og:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
+          <meta name="twitter:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
       </Helmet>
 
           <Navigation />
