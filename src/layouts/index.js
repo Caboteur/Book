@@ -40,10 +40,7 @@ class Template extends React.Component {
           <html lang="fr" />
           <meta name="description" content="Adrien Blanchot, developpeur et designer interractif." />
           <meta name="theme-color" content="#112b4d" />
-          <meta http-equiv="Content-Security-Policy" content="default-src https:" />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-          
-
       </Helmet>
 
           <Navigation />
