@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
       imgDes2:"https://www.combourg.com/images/vue-appli-avec-main.png",
       link:"https://github.com/Caboteur/zone",
       display:"inherit",
-
+      Display:"none",
     }
   }
 
@@ -41,14 +41,14 @@ componentDidMount(){
     this.setState({imgDes2:posts[this.state.Count].node.imgDescription[1].file.url});
     this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
     this.setState({link:posts[this.state.Count].node.lien})
-    setTimeout(()=> this.setState({display: "none" }), 500)
+    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 500)
         }
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
     if (this.state.Count < 4 ) {
-    this.setState({display: "inherit" });
-    setTimeout(()=> this.setState({display: "none" }), 1700)
+    this.setState({display: "inherit", Display: "none" });
+    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 1700)
     this.setState({Count: this.state.Count + 1});
     this.setState({Img:this.state.MyList[this.state.Count + 1].node.heroImage.file.url});
     this.setState({View:this.state.MyList[this.state.Count + 1].node.title});
@@ -92,7 +92,7 @@ componentDidMount(){
     return (
       <div>
 
-      <div style={{display:this.state.display, height:"100vh", width:"100%",background:"#112b4d", zIndex: 1}}>
+      <div id="loader" style={{display:this.state.display, height:"20vh", width:"100%",background:"#112b4d", zIndex: 1}}>
       <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
       </div>
 
@@ -102,9 +102,9 @@ componentDidMount(){
 
         <img src={arrow} className="lessButton" onClick={this.LessProject.bind(this)}/>
 
-        <div className="page-blog-wrapper" onClick={this.OpenState.bind(this)}>
+        <div style={{display:this.state.Display}} className="page-blog-wrapper" onClick={this.OpenState.bind(this)}>
 
-        <ArticleContainer name={this.state.View} counting={this.state.Count} title={this.state.Object} image={this.state.Img} />
+        <ArticleContainer  name={this.state.View} counting={this.state.Count} title={this.state.Object} image={this.state.Img} />
 
         </div>
 
