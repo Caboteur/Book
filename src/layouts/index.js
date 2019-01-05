@@ -45,6 +45,7 @@ class Template extends React.Component {
           <meta property="og:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
           <meta name="twitter:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
           <meta name="google-site-verification" content="_pKFsMSAaiTo-LIUXH1amlbfwhs3xTvQwresCtaCkXg" />
+          <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
       </Helmet>
 
           <Navigation />
