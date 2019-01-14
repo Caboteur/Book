@@ -20,11 +20,12 @@ class Contact extends React.Component {
             method="post"
             data-netlify="true"
              action="/main"
+             data-netlify-recaptcha="true"
             >
 
 
         <p className="name">
-          <input  type="text" name="form-name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          <input  type="text" name="form-name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
         </p>
 
         <p className="email">
@@ -32,12 +33,12 @@ class Contact extends React.Component {
         </p>
 
         <p className="text">
-          <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+          <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaire"></textarea>
         </p>
 
 
         <div className="submit">
-          <button type="submit"  id="button-blue"/>
+          <button type="submit" value="envoyer" id="button-blue"/>
           <div className="ease"></div>
         </div>
       </form>
