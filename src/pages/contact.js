@@ -18,6 +18,7 @@ class Contact extends React.Component {
       <form className="form"
             name="contact-form"
             method="post"
+            data-netlify="true"
             >
 
         <p className="name">
