@@ -15,31 +15,24 @@ class Contact extends React.Component {
     <div>
     <div id="form-main">
     <div id="form-div">
-      <form className="form"
-            name="contact-form"
-            method="post"
-            data-netlify-honeypot="bot-field"
-            >
-
-
-        <p className="name">
-          <input  type="text" name="form-name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
-        </p>
-
-        <p className="email">
-          <input type="email" name="email" className="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-        </p>
-
-        <p className="text">
-          <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaire"></textarea>
-        </p>
-
-
-        <div className="submit">
-          <input type="submit" value="envoyer" id="button-blue"/>
-          <div className="ease"></div>
-        </div>
-      </form>
+    <form method="post" action="#">
+      <div className="field half first">
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" />
+      </div>
+      <div className="field half">
+          <label htmlFor="email">Email</label>
+          <input type="text" name="email" id="email" />
+      </div>
+      <div className="field">
+          <label htmlFor="message">Message</label>
+          <textarea name="message" id="message" rows="6"></textarea>
+      </div>
+      <ul className="actions">
+          <li><input type="submit" value="Send Message" className="special" /></li>
+          <li><input type="reset" value="Clear" /></li>
+      </ul>
+  </form>
     </div>
     </div>
     </div>
