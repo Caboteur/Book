@@ -15,7 +15,8 @@ class Contact extends React.Component {
     <div>
     <div id="form-main">
     <div id="form-div">
-      <form className="form"
+      <form id="idea"
+            className="form"
             name="contact-form"
             method="post"
             data-netlify="true">
