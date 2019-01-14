@@ -18,9 +18,7 @@ class Contact extends React.Component {
       <form className="form"
             name="contact-form"
             method="post"
-            data-netlify="true"
-             action="/main"
-             data-netlify-recaptcha="true"
+            data-netlify-honeypot="bot-field"
             >
 
 
@@ -38,7 +36,7 @@ class Contact extends React.Component {
 
 
         <div className="submit">
-          <button type="submit" value="envoyer" id="button-blue"/>
+          <input type="submit" value="envoyer" id="button-blue"/>
           <div className="ease"></div>
         </div>
       </form>
