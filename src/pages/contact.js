@@ -18,19 +18,18 @@ class Contact extends React.Component {
       <form className="form"
             name="contact-form"
             method="post"
-            data-netlify="true"
-            >
+            data-netlify="true">
 
         <p className="name">
-          <input  type="text" name="form-name" className=" feedback-input" placeholder="Nom" id="name" />
+          <input  type="text" name="form-name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
         </p>
 
         <p className="email">
-          <input type="email" name="email" className=" feedback-input" id="email" placeholder="Email" />
+          <input type="email" name="email" className="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
         </p>
 
         <p className="text">
-          <textarea name="message" className=" feedback-input" id="comment" placeholder="Commentaire"></textarea>
+          <textarea name="message" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Commentaire"></textarea>
         </p>
 
 
