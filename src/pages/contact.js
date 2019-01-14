@@ -21,7 +21,7 @@ class Contact extends React.Component {
             data-netlify="true">
 
         <p className="name">
-          <input  type="text" name="form-name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
+          <input  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
         </p>
 
         <p className="email">
