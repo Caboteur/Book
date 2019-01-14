@@ -37,7 +37,7 @@ class Contact extends React.Component {
 
 
         <div className="submit">
-          <input type="submit" value="SEND" id="button-blue"/>
+          <button type="submit"  id="button-blue"/>
           <div className="ease"></div>
         </div>
       </form>
