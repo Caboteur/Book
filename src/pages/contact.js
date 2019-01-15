@@ -19,7 +19,9 @@ class Contact extends React.Component {
             className="form"
             name="contact-form"
             method="post"
-            data-netlify="true">
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            >
 
         <p className="name">
           <input  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
