@@ -29,7 +29,7 @@ C131.967,94.755,132.296,93.271,131.583,92.152z" />
 </div>
 <div id='lower-side'>
   <p id='message'>
-    Votre message a bien été envoyer!
+    Votre message a bien été envoyé!
   </p>
   <Link href="#" id="contBtn" to="/main">Back</Link>
 </div>
