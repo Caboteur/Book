@@ -23,7 +23,6 @@ class Contact extends React.Component {
             data-netlify-honeypot="bot-field"
             action="/success"
             >
-            <input type="hidden" name="form-name" value="contact" />
         <p className="name">
           <input  type="text" name="name" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="name" />
         </p>
