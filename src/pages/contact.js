@@ -20,7 +20,7 @@ class Contact extends React.Component {
             name="contact-form"
             method="post"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            data-netlify-honeypot="name"
             action="/success"
             >
         <p className="name">
