@@ -5,6 +5,7 @@ import ArticlePreview from '../components/article-preview'
 import Motion from '../images/motion-web.svg'
 import Motionn from '../images/motion-web-3.svg'
 import ReactBodymovin from 'react-bodymovin'
+import Blog from './blog.js'
 import animation from '../images/animation.json'
 import main from './main.css'
 
