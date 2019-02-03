@@ -72,16 +72,7 @@ export default class Opening extends React.Component {
           <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
 
           </div>
-        )   : this.props.tile === "Hellfest / Dc Martens" ?
-        (
-          <div>
-       <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
-       <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
-        <img style={{width: "90%"}} className="img-opening" src="http://images.ctfassets.net/xtml4dwibgxh/48PVpcUGbqQDeu9ghyCNr0/365a36a4d06dc213eaa8eb12f6590c39/videoBrewster.jpg" />
-
-       <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
-
-       </div> )  :
+        ) :
 
         (
           <div>

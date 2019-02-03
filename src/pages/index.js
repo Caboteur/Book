@@ -7,8 +7,6 @@ import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animation.json'
 import { navigate } from "@reach/router"
 import {Helmet} from "react-helmet";
-import Blog from './blog.js'
-
 
 class RootIndex extends React.Component {
   constructor(){
@@ -41,6 +39,7 @@ class RootIndex extends React.Component {
             <h1>Bienvenue sur mon portfolio, je suis developpeur et designer interractif</h1>
             </div>
          <img className="img-wrapper" src={Motionn} />
+
     </div>
     )
   }

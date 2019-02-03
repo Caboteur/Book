@@ -2,6 +2,7 @@ body{
   margin: 0px;
   font-family: 'Quicksand', sans-serif;
   background: #112b4d;
+  overflow: hidden;
   max-width: 1100px;
   margin: auto;
 }
@@ -102,5 +103,92 @@ body{
     display: block !important;
   }
 
+
+}
+
+@media screen and (min-width: 1920px) {
+
+.img-wrapper{
+  width:50%;
+}
+
+.img-container{
+  max-height: 100%;
+}
+
+.logoMessenger {
+    width: 6%;
+    position: absolute;
+    max-width: 70px;
+    float: right;
+    bottom: 3%;
+    right: 19%;
+}
+
+.logoLN {
+    width: 5%;
+    position: absolute;
+    bottom: 3%;
+    left: 19%;
+    padding: 15px;
+}
+
+body{
+  border-right: 2px solid #fff1e0;
+  border-left: 2px solid #fff1e0;
+  background: #112b4d;
+  height: 100vh;
+  margin: auto;
+  padding: 67px;
+  zoom: 1.2
+}
+
+.container-logo-bottom {
+  max-width: 1000px;
+  margin: auto;
+}
+html{
+ background: #112b4d;
+ }
+
+}
+
+
+@media screen and (min-width: 2000px) {
+
+  body{
+    border-right: 2px solid #fff1e0;
+    border-left: 2px solid #fff1e0;
+    background: #112b4d;
+    height: 100vh;
+    margin: auto;
+    padding: 67px;
+    zoom: 1.5
+  }
+
+
+   .logoMessenger {
+       width: 6%;
+       position: absolute;
+       max-width: 70px;
+       float: right;
+       bottom: 2%;
+       right: 17%;
+   }
+
+   .logoLN {
+       width: 5%;
+       position: absolute;
+       bottom: 2%;
+       left: 17%;
+       padding: 15px;
+   }
+
+
+
+
+.container-logo-bottom{
+  display: block;
+}
 
 }
