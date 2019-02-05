@@ -46,7 +46,7 @@ componentDidMount(){
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
-    if (this.state.Count < 4 ) {
+    if (this.state.Count < 6 ) {
     this.setState({display: "inherit", Display: "none" });
     setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 1700)
     this.setState({Count: this.state.Count + 1});
