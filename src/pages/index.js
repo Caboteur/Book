@@ -2,7 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import ArticlePreview from '../components/article-preview'
 import Motion from '../images/motion-web.svg'
-import Motionn from '../images/motion-web-3.svg'
+import Motionn from '../images/backk.jpg';
 import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animation.json'
 import { navigate } from "@reach/router"
