@@ -39,7 +39,7 @@ class Template extends React.Component {
           <title>Adrien Blanchot  - Portfolio - développeur et designer web</title>
           <link rel="icon"  href="./windowLogo.png" />
           <html lang="fr" />
-          <meta name="description" content="Portfolio d'Adrien Blanchot: développeur et designer pour le web / motion designer / créateur de contenu interactif." />
+          <meta name="description" content="Portfolio d'Adrien Blanchot: creative développeur et designer freelance" />
           <meta name="theme-color" content="#112b4d" />
           <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
           <meta property="og:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
