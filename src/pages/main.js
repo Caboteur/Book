@@ -17,7 +17,7 @@ class RootIndex extends React.Component {
     return (
     <div>
     <div className="typewriter">
-          <h1>Bienvenue sur mon portfolio, je suis développeur et designer interactif.</h1>
+          <h1>Bienvenue sur mon portfolio, je suis un creative développeur.</h1>
           </div>
          <img className="img-wrapper" src={Motionn} />
     </div>
