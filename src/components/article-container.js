@@ -18,7 +18,7 @@ export default class RootIndex extends React.Component {
      <video className="video-container" src={this.props.image} title={this.props.title} type="video/mov" preload controls />
     )  :  this.props.name === "Consilium" ?
     <img className="img-w-container" src={this.props.image} />
-    :  this.props.name === "Hellfest / Dc Martens"  ?
+    :  this.props.name === "Dr Martens"  ?
     <img className="img-w-container" src={this.props.image} />:
       this.props.name ===   "Scandal By Night" ?
     <img className="img-w-container" src={this.props.image} />: (
