@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+#maif-form{
+	background-image: url("https://images.ctfassets.net/xtml4dwibgxh/3IuNzCJb9QAE8TvJj5Zmdv/8df2969c4fe76c553b1acb146c1961f4/scaph2.jpg?h=250");
+}
 
 #feedback-page{
 	text-align:center;

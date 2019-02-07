@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Motion from '../images/motion-web.svg'
+import Scaph from '../images/scaph.jpg'
 import styles from './contact.css'
 
 class Contact extends React.Component {
@@ -12,7 +13,9 @@ class Contact extends React.Component {
 
 
     return (
-    <div>
+      <div id="main-form">
+
+
     <div id="form-main">
     <div id="form-div">
       <form id="idea"
