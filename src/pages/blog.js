@@ -41,12 +41,13 @@ componentDidMount(){
     this.setState({imgDes2:posts[this.state.Count].node.imgDescription[1].file.url});
     this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
     this.setState({link:posts[this.state.Count].node.lien})
-    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 500)
+    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 500);
+    console.log(this.state.View)
         }
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
-    if (this.state.Count < 5 ) {
+    if (this.state.Count < 6 ) {
     this.setState({display: "inherit", Display: "none" });
     setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 1700)
     this.setState({Count: this.state.Count + 1});
@@ -56,7 +57,7 @@ componentDidMount(){
     this.setState({imgDes2:this.state.MyList[this.state.Count + 1].node.imgDescription[1].file.url});
     this.setState({Object:this.state.MyList[this.state.Count + 1].node.firstdescription.content[0].content[0].value})
     this.setState({link:this.state.MyList[this.state.Count + 1].node.lien})
-
+    console.log(this.state.View);
     }
   }
 
