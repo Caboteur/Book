@@ -15,7 +15,7 @@ class Contact extends React.Component {
     return (
       <div id="main-form">
 
-     <img src={Scaph} />
+
     <div id="form-main">
     <div id="form-div">
       <form id="idea"
