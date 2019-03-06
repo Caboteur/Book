@@ -7,7 +7,7 @@ const Introduction = styled.div`
    width: 60%;
    height:100vh;
    background:white;
-   position: absolute;
+   position: fixed;
    right:0;
    top:0;
 `;

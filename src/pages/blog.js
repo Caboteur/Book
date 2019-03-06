@@ -42,7 +42,7 @@ componentDidMount(){
     this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
     this.setState({link:posts[this.state.Count].node.lien})
     setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 500);
-    console.log(this.state.View)
+    console.log(posts)
         }
 
   MoreProject(){
@@ -163,6 +163,5 @@ query BlogIndexQuery {
       }
     }
   }
-
   }
 `

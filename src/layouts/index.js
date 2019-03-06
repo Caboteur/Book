@@ -57,7 +57,7 @@ class Template extends React.Component {
 
             </div>
 
-
+            <div className="bottom-foot">adblanchot@gmail.com</div>
             <div className="container-logo-bottom">
 
             <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>

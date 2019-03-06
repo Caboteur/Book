@@ -6,6 +6,18 @@ display:block;
 margin-top: 5%;
 }
 
+.container-bod-skills .react-bodymovin-container{
+width: 40%;
+height: 80%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+margin: auto;
+display: block;
+left: 0;
+right: 0;
+}
+
 @media screen and (max-width: 640px) {
   .skills-wrapper{
       max-width: 400px;
@@ -13,6 +25,10 @@ margin-top: 5%;
       margin: auto;
       display: block;
       margin-top: 20%;
+  }
+
+  .container-bod-skills .react-bodymovin-container {
+    width:90%;
   }
 
 }

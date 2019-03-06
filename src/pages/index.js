@@ -34,7 +34,7 @@ class RootIndex extends React.Component {
     return (
     <div>
 
-      <div style={{display: this.state.display}}>  <ReactBodymovin options={bodymovinOptions} /> </div>
+      <div style={{display: this.state.display}}> <div className="container-bod"> <ReactBodymovin options={bodymovinOptions} /></div> </div>
       <div className="typewriter">
             <h1>Bienvenue sur mon portfolio, je suis un creative développeur.</h1>
             </div>

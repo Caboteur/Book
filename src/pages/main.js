@@ -7,6 +7,7 @@ import Motionn from '../images/bakkk.jpg'
 import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animation.json'
 import main from './main.css'
+import Blog from './blog.js'
 
 class RootIndex extends React.Component {
 
@@ -20,6 +21,7 @@ class RootIndex extends React.Component {
           <h1>Bienvenue sur mon portfolio, je suis un creative développeur.</h1>
           </div>
          <img className="img-wrapper" src={Motionn} />
+        
     </div>
     )
   }
