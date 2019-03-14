@@ -54,13 +54,13 @@ class Navigation extends React.Component {
         <ul className="navigation">
 
           <li  className="navigationItem"  >
-            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Réalisations</Link>
+            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Réalisations</Link>
           </li>
           <li className="navigationItem" >
-            <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Skills</Link>
+            <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Skills</Link>
           </li>
           <li className="navigationItem" >
-            <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"line-through"}}>Contact</Link>
+            <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Contact</Link>
           </li>
 
 

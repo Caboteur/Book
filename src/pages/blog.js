@@ -78,7 +78,7 @@ componentDidMount(){
   }
 
   ChangeState(){
-    this.setState({open:"none"})
+    if(this.state.open != "none"){this.setState({open:"none"})}  
   }
 
   OpenState(){
@@ -91,7 +91,7 @@ componentDidMount(){
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     console.log(this.state.imgDes)
     return (
-      <div>
+      <div onClick={this.ChangeState.bind(this)}>
 
       <div id="loader" style={{display:this.state.display, height:"20vh", width:"100%",background:"#112b4d", zIndex: 1}}>
       <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
