@@ -11,6 +11,7 @@ import wave from '../images/wave.svg'
 import {Helmet} from "react-helmet";
 import cubeL from '../images/cubeL.png'
 
+
 const Background = styled.div`
    width: 100%;
    height:100vh;
@@ -21,6 +22,9 @@ const Background = styled.div`
 `;
 
 class Template extends React.Component {
+
+
+
 
 
   render() {
@@ -45,6 +49,7 @@ class Template extends React.Component {
           <meta property="og:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
           <meta name="twitter:image" content="https://images.ctfassets.net/xtml4dwibgxh/6pKigRQSUoGKWIogso6og/ee3b864ecc51d11d83e2351525602bf6/cubeL.png?h=250"/>
           <meta name="google-site-verification" content="_pKFsMSAaiTo-LIUXH1amlbfwhs3xTvQwresCtaCkXg" />
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js'></script>
           <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
       </Helmet>
 
@@ -52,7 +57,7 @@ class Template extends React.Component {
           <span></span>
 
             <div className="background">
-
+    
             {children()}
 
             </div>

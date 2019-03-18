@@ -12,8 +12,10 @@ export default class RootIndex extends React.Component {
     return (
       <div name={this.props.num}>
 
-
+       
     <img className="img-w-container" src={this.props.image} />
+
+
 
 
 

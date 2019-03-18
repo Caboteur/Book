@@ -27,6 +27,7 @@ module.exports = class HTML extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width,initial-scale=1">
           <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+
           <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

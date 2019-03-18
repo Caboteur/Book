@@ -47,7 +47,7 @@ componentDidMount(){
 
   MoreProject(){
     const TotalNum = this.state.MyList.length
-    if (this.state.Count < 6 ) {
+    if (this.state.Count < 7 ) {
     this.setState({display: "inherit", Display: "none" });
     setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 1700)
     this.setState({Count: this.state.Count + 1});
@@ -78,7 +78,7 @@ componentDidMount(){
   }
 
   ChangeState(){
-    if(this.state.open != "none"){this.setState({open:"none"})}  
+    if(this.state.open != "none"){this.setState({open:"none"})}
   }
 
   OpenState(){

@@ -26,6 +26,11 @@ body{
 
 }
 
+#my_canvas {
+  width: 100vw;
+  height: 100vh;
+  background: #112b4d;
+}
 
 #___gatsby{
   max-width: 1600px;
