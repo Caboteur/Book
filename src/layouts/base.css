@@ -7,6 +7,29 @@ body{
   overflow: hidden;
 }
 
+.classSvg{
+  fill:none;
+  stroke:black;
+  stroke-miterlimit:10;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.classSvg path{
+  stroke-width:0.5px;
+}
+
+.containerSvg2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  z-index: -40;
+}
 
 
 .bottom-foot{
