@@ -63,7 +63,6 @@ class Navigation extends React.Component {
             <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Contact</Link>
           </li>
 
-           <span><li className="navigationItem" style={{color:"#fff1e0", borderBottom: "2px solid #fff1e0", right: "10%", marginTop: "11px", position: "absolute"}}><Link> FR </Link> <Link> EN </Link></li></span>
 
         </ul>
 
