@@ -8,6 +8,10 @@ import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animation.json'
 import main from './main.css'
 import Blog from './blog.js'
+import Fade from 'react-reveal/Fade';
+import Scene from '../components/scene'
+import Anim from '../components/anim'
+
 
 class RootIndex extends React.Component {
 
@@ -18,10 +22,11 @@ class RootIndex extends React.Component {
     return (
     <div>
     <div className="typewriter">
-          <h1>Bienvenue sur mon portfolio, je suis un creative développeur.</h1>
+    <Fade top>
+       <h1>Bienvenue sur mon portfolio, je suis un développeur web et designer interactif.</h1>
+    </Fade>
           </div>
-         <img className="img-wrapper" src={Motionn} />
-        
+        <Anim />
     </div>
     )
   }

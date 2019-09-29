@@ -39,6 +39,7 @@ class Contact extends React.Component {
         </p>
 
 
+
         <div className="submit">
           <input type="submit" value="envoyer" id="button-blue"/>
           <div className="ease"></div>

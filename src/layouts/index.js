@@ -11,7 +11,6 @@ import wave from '../images/wave.svg'
 import {Helmet} from "react-helmet";
 import cubeL from '../images/cubeL.png'
 
-
 const Background = styled.div`
    width: 100%;
    height:100vh;
@@ -57,7 +56,7 @@ class Template extends React.Component {
           <span></span>
 
             <div className="background">
-          
+
             {children()}
 
             </div>
@@ -67,7 +66,6 @@ class Template extends React.Component {
 
             <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
             <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger' src={messenger} /> </a>
-
 
 
           </div>

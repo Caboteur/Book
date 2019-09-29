@@ -7,6 +7,8 @@ import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animation.json'
 import { navigate } from "@reach/router"
 import {Helmet} from "react-helmet";
+import Fade from 'react-reveal/Fade';
+import scene from '../components/scene'
 
 class RootIndex extends React.Component {
   constructor(){
@@ -36,9 +38,12 @@ class RootIndex extends React.Component {
 
       <div style={{display: this.state.display}}> <div className="container-bod"> <ReactBodymovin options={bodymovinOptions} /></div> </div>
       <div className="typewriter">
-            <h1>Bienvenue sur mon portfolio, je suis un creative développeur.</h1>
+           <Fade top>
+              <h1>Bienvenue sur mon portfolio, je suis un développeur web et designer interactif.</h1>
+           </Fade>
             </div>
          <img className="img-wrapper" src={Motionn} />
+      
 
     </div>
     )

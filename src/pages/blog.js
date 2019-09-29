@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import arrow from '../images/arrow.svg'
 import Opening from '../components/opening'
 import loading from '../images/loader.svg'
+import Fade from 'react-reveal/Fade';
 
 
 class BlogIndex extends React.Component {
@@ -97,16 +98,19 @@ componentDidMount(){
       <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
       </div>
 
+
        <Opening value={this.state.Count} link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 
         <Helmet className="Helmet-title" title={siteTitle} />
+
 
         <img src={arrow} className="lessButton" onClick={this.LessProject.bind(this)}/>
 
         <div style={{display:this.state.Display}} className="page-blog-wrapper" onClick={this.OpenState.bind(this)}>
 
+       <Fade top>
         <ArticleContainer  name={this.state.View} counting={this.state.Count} title={this.state.Object} image={this.state.Img} />
-
+       </Fade>
         </div>
 
 

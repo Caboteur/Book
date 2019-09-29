@@ -98,6 +98,7 @@ body{
   margin: auto;
   display: block;
   max-width: 122vh;
+  perspective: 30px;
 }
 
 .logoMessenger{
