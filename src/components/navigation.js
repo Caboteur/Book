@@ -72,7 +72,7 @@ class Navigation extends React.Component {
              <Link  name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} >Réalisations</Link>
            </span>
            <span  className="navigation-mobile-item">
-           <a href="#Apropos"><Link className="glitch" name="skills" to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} >À propos</Link></a>
+        <Link className="glitch" name="skills" to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} >À propos</Link>
            </span>
           <div className="second-part"></div>
 
