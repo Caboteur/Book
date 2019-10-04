@@ -5,8 +5,7 @@ import Container from '../components/container'
 import Navigation from '../components/navigation.js'
 import Opening from '../components/opening'
 import styled from 'styled-components'
-import logoLN from '../images/logoLNBeige.svg'
-import messenger from '../images/messengerBeige.svg'
+
 import wave from '../images/wave.svg'
 import {Helmet} from "react-helmet";
 import cubeL from '../images/cubeL.png'
@@ -50,6 +49,7 @@ class Template extends React.Component {
           <meta name="google-site-verification" content="_pKFsMSAaiTo-LIUXH1amlbfwhs3xTvQwresCtaCkXg" />
           <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js'></script>
           <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
+        
       </Helmet>
 
           <Navigation />
@@ -61,11 +61,9 @@ class Template extends React.Component {
 
             </div>
 
-            <div className="bottom-foot">adblanchot@gmail.com</div>
             <div className="container-logo-bottom">
 
-            <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
-            <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger' src={messenger} /> </a>
+
 
 
           </div>

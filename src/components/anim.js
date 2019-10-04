@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import styles from './anim.css'
 import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
 const OrbitControls = require('three-orbitcontrols')
-
+import {TweenMax} from "gsap";
 
  export default class Anim extends Component {
 

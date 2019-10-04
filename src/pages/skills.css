@@ -18,6 +18,20 @@ left: 0;
 right: 0;
 }
 
+.container-bod-skills .react-bodymovin-container{
+width: 54%;
+height: 80%;
+position: inherit;
+top: 50%;
+-ms-transform: translateY(-50%);
+margin: auto;
+display: block;
+left: 0;
+right: 0;
+margin-top: 30%;
+margin-bottom: 9%;
+}
+
 @media screen and (max-width: 640px) {
   .skills-wrapper{
       max-width: 400px;
@@ -31,4 +45,12 @@ right: 0;
     width:90%;
   }
 
+}
+
+.footer-div-skills{
+  background: #112b4d;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
 }

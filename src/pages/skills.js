@@ -5,6 +5,8 @@ import metromap from '../images/metromap2.svg'
 import styled from './skills.css'
 import ReactBodymovin from 'react-bodymovin'
 import animation from '../images/animmap.json'
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
 
 class Skills extends React.Component {
 
@@ -21,9 +23,14 @@ class Skills extends React.Component {
 
 
     return (
+  <div>
     <div className="container-bod-skills">
          <ReactBodymovin options={bodymovinOptions} />
+
     </div>
+    
+
+  </div>
     )
   }
 }

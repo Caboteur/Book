@@ -48,20 +48,19 @@ class Navigation extends React.Component {
 
     return (
       <nav role="navigation">
-      <Link  to="/main" onClick={this.handleClick.bind(this)}>
-         <img className="Mainlogo" to="/main" src={logo} />
-         </Link>
+
         <ul className="navigation">
 
+        <Link  to="/main" onClick={this.handleClick.bind(this)}>
+           <img className="Mainlogo" to="/main" src={logo} />
+        </Link>
+
           <li  className="navigationItem"  >
-            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Réalisations</Link>
+            <Link name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fffff"} : {textDecoration:"inherit"}}>Réalisations</Link>
           </li>
-          <li className="navigationItem" >
-            <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Skills</Link>
-          </li>
-          <li className="navigationItem" >
-            <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid #fff1e0"} : {textDecoration:"none"}}>Contact</Link>
-          </li>
+          <span  className="navigationItem">
+            <Link name="skills" to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom:"2px solid #fffff"} : {textDecoration:"inherit"}}>A propos</Link>
+          </span>
 
 
         </ul>
@@ -70,14 +69,12 @@ class Navigation extends React.Component {
 
 
            <span className="navigation-mobile-item">
-             <Link  name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Réalisations</Link>
+             <Link  name="realisation" to="/blog/" onClick={this.handleClick.bind(this)} >Réalisations</Link>
            </span>
            <span  className="navigation-mobile-item">
-             <Link name="skills" to="/skills" onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Skills</Link>
+           <a href="#Apropos"><Link className="glitch" name="skills" to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} >À propos</Link></a>
            </span>
-           <span  className="navigation-mobile-item">
-             <Link name="contact" to="/contact/" onClick={this.handleClick.bind(this)} style={this.state.point == "contact"? {textDecoration:"none", borderBottom: "2px solid rgb(240, 205, 56)"} : {textDecoration:"line-through"}}>Contact</Link>
-           </span>
+          <div className="second-part"></div>
 
          </div>
 

@@ -1,6 +1,5 @@
 canvas {
-  width: 900px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+
 .page-blog-wrapper{
     height: 62vh;
     width: 70%;
@@ -19,7 +21,6 @@ margin-top: 17%;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
 }
 
 .sect-img{
@@ -87,4 +88,249 @@ margin-top: 17%;
 
 }
 
+}
+
+.container{
+  max-width:1230px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.main-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  margin-top:10%;
+
+}
+
+.card{
+
+    max-width: 95%;
+    margin: 20px;
+    height: 409px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    filter: grayscale(1);
+}
+
+.card:hover{
+  filter: grayscale(0);
+}
+
+.typew{
+  width: 20%;
+  margin: auto;
+  display: block;
+}
+
+.card-container{
+  height: 100%;
+    width: 100%;
+    background: #112b4d;
+    opacity: 0;
+    filter: grayscale(0);
+}
+
+.card-container:hover{
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.paint {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+.hoverPaint{
+  width: 100%;
+  height: auto;
+}
+
+.intro{
+  font-family: 'Lexend Zetta', sans-serif;
+  max-width:1230px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 4rem;
+  letter-spacing: 6px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.heading--stroke {
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
+  -moz-text-stroke-color: #ffffff;
+  color: transparent;
+  text-align: center;
+}
+.heading--shadow {
+  text-shadow: 4px 4px #ffffff;
+}
+.heading--stroke-shadow {
+  color: #f2cee6;
+  text-shadow: -2px 0 #0d1b1e, 0 -2px #0d1b1e, 2px 0 #0d1b1e, 0 2px #0d1b1e, 2px 2px #0d1b1e, -2px -2px #0d1b1e, -2px 2px #0d1b1e, 2px -2px #0d1b1e, 6px 6px #2dc7ff;
+}
+.heading--halftone {
+  position: relative;
+}
+.heading--halftone:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==") repeat;
+  -webkit-text-stroke-width: 0;
+  -moz-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 4rem;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  top: calc(50% + 6px);
+  content: "Hello";
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.heading--halftone-color:after {
+  background-color:  #ffb9b9;;
+}
+
+.info {
+  padding: 1rem 0;
+}
+
+.copyright{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'B612 Mono', monospace;
+}
+
+.footer-div{
+  width: 100%;
+    height: 100px;
+    background: #112b4d;
+}
+
+.logoMessenger-footer{
+  width: 4%;
+    position: inherit;
+    max-width: 70px;
+    display: iblock;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+.logoLN-footer{
+    width: 3%;
+    position: inherit;
+    max-width: 70px;
+    display: block;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .logoMessenger-footer{
+    width: 6%;
+  }
+
+  .logoLN-footer{
+      width: 5%;
+  }
+
+  .heading {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    margin: 2rem 0;
+  }
+
+  .card {
+  width: 67%;
+      margin: auto;
+      height: 411px;
+    }
+
+  .contain-card{
+    width: 100%;
+  }
+
+  .main-gallery{
+    display: grid;
+    grid-template-columns:1fr;
+    margin: auto;
+    margin-top:10%;
+
+  }
+
+  .typew{
+    width: 40%;
+    margin: auto;
+    display: block;
+  }
+
+}
+
+.contain-card{
+  width: 100%;
+}
+
+#Apropos{
+  width: 80%;
+    margin: auto;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 500px){
+
+
+  #Apropos{
+  margin-top: Opx;
+  }
+
+  .card{
+    width: 85%;
+    margin: auto;
+    height: 300px;
+  }
+
+  .logoMessenger-footer{
+    width: 9%;
+  }
+
+  .logoLN-footer{
+      width: 8%;
+  }
+
+}
+
+#Apropos h2{
+  margin-bottom: 25px;
+}
+
+#Apropos img{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.location{
+  margin-bottom: 20px;
 }

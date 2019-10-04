@@ -8,7 +8,6 @@
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
   height: 9vh;
   max-height: 100px;
   font-size: 1.25em;
@@ -26,18 +25,17 @@
 }
 
 .navigationItem a {
-  color: #fff1e0;
+  color: #ffffff;
   text-decoration: none;
   display: inherit;
 }
 
 .Mainlogo{
   width: 8%;
-left: 3%;
 width: 83%;
 max-width: 70px;
 float: left;
-margin-top: 11px;
+position: relative;
 }
 
 .Mainlogo:hover{
@@ -140,19 +138,23 @@ margin-top: 11px;
 
 
   .navigationItem a {
-    color: #fff1e0;
+    color: #ffffff;
     text-decoration: none;
     display: none;
   }
+
+
 
   .navigation-mobile-item{
     display: inherit;
     margin: auto;
     text-align: center;
     margin: 101px;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
       animation: fontSize 3s;
+      font-family: 'B612 Mono', monospace;
+
   }
 
   .navigation-mobile-item a{
@@ -173,4 +175,19 @@ margin-top: 11px;
 
   .container-nav-log{
     display: none;
+  }
+
+  #Apropos{
+    margin-top: 10%;
+
+  }
+
+  .second-part{
+    height: 100%;
+    background: wheat;
+  }
+
+  .navigationItem  :hover{
+    border-left: 2px solid white;
+    padding-left: 10px;
   }

@@ -8,7 +8,10 @@ import animation from '../images/animation.json'
 import { navigate } from "@reach/router"
 import {Helmet} from "react-helmet";
 import Fade from 'react-reveal/Fade';
-import scene from '../components/scene'
+import Anim from '../components/anim';
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
+
 
 class RootIndex extends React.Component {
   constructor(){
@@ -38,14 +41,17 @@ class RootIndex extends React.Component {
 
       <div style={{display: this.state.display}}> <div className="container-bod"> <ReactBodymovin options={bodymovinOptions} /></div> </div>
       <div className="typewriter">
-           <Fade top>
-              <h1>Bienvenue sur mon portfolio, je suis un développeur web et designer interactif.</h1>
-           </Fade>
+      <Fade top>
+         <h1>Bienvenue sur mon portfolio, je suis un développeur web et designer interactif.</h1>
+      </Fade>
             </div>
-         <img className="img-wrapper" src={Motionn} />
-      
+          <Anim />
+          <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
+           <a href="adblanchot@gmail.com"><div className="bottom-foot">adblanchot@gmail.com </div></a>
 
-    </div>
+          <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger' src={messenger} /> </a>
+      </div>
+
     )
   }
 }

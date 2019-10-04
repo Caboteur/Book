@@ -5,18 +5,24 @@ import Helmet from 'react-helmet'
 import styles from './blog.css'
 import ArticlePreview from '../components/article-preview.js'
 import ArticleContainer from '../components/article-container.js'
+import Skills from './skills.js'
 import styled from 'styled-components'
 import arrow from '../images/arrow.svg'
 import Opening from '../components/opening'
 import loading from '../images/loader.svg'
+import typew from '../images/typew.svg'
+import character from '../images/character.svg'
 import Fade from 'react-reveal/Fade';
-
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
+import Maps from '../components/maps.js'
 
 class BlogIndex extends React.Component {
   constructor(){
     super();
     this.state= {
       MyList:[],
+      Val:"",
       Count:0,
       View:"Projet",
       color:"green",
@@ -36,87 +42,87 @@ class BlogIndex extends React.Component {
 componentDidMount(){
     const posts = get(this, 'props.data.allContentfulBlogPost.edges');
     this.setState({MyList:posts});
-    this.setState({View:posts[this.state.Count].node.title});
-    this.setState({Img:posts[this.state.Count].node.heroImage.file.url});
-    this.setState({imgDes:posts[this.state.Count].node.imgDescription[0].file.url});
-    this.setState({imgDes2:posts[this.state.Count].node.imgDescription[1].file.url});
-    this.setState({Object:posts[this.state.Count].node.firstdescription.content[0].content[0].value})
-    this.setState({link:posts[this.state.Count].node.lien})
-    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 500);
-    console.log(posts)
         }
 
-  MoreProject(){
-    const TotalNum = this.state.MyList.length
-    if (this.state.Count < 8 ) {
-    this.setState({display: "inherit", Display: "none" });
-    setTimeout(()=> this.setState({display: "none", Display: "inherit" }), 1700)
-    this.setState({Count: this.state.Count + 1});
-    this.setState({Img:this.state.MyList[this.state.Count + 1].node.heroImage.file.url});
-    this.setState({View:this.state.MyList[this.state.Count + 1].node.title});
-    this.setState({imgDes:this.state.MyList[this.state.Count + 1].node.imgDescription[0].file.url});
-    this.setState({imgDes2:this.state.MyList[this.state.Count + 1].node.imgDescription[1].file.url});
-    this.setState({Object:this.state.MyList[this.state.Count + 1].node.firstdescription.content[0].content[0].value})
-    this.setState({link:this.state.MyList[this.state.Count + 1].node.lien})
-    console.log(this.state.View);
-    }
-  }
-
-  LessProject(){
-
-    if (this.state.Count > 0) {
-      this.setState({Count: this.state.Count - 1});
-      this.setState({Img:this.state.MyList[this.state.Count - 1].node.heroImage.file.url});
-      this.setState({View:this.state.MyList[this.state.Count - 1].node.title});
-      this.setState({imgDes:this.state.MyList[this.state.Count -1 ].node.imgDescription[0].file.url});
-      this.setState({imgDes2:this.state.MyList[this.state.Count -1 ].node.imgDescription[1].file.url});
-      this.setState({Object:this.state.MyList[this.state.Count - 1].node.firstdescription.content[0].content[0].value})
-      this.setState({link:this.state.MyList[this.state.Count - 1].node.lien})
-
-    }
 
 
-  }
+
 
   ChangeState(){
     if(this.state.open != "none"){this.setState({open:"none"})}
   }
 
-  OpenState(){
-    this.setState({open:"inherit"})
-    console.log(this.state.link)
+   handleChange(event){
+
+
+      const val = event.target.id;
+       console.log(val)
+      this.setState({View:this.state.MyList[val-1].node.title});
+      this.setState({imgDes:this.state.MyList[val-1].node.imgDescription[0].file.url});
+      this.setState({imgDes2:this.state.MyList[val-1].node.imgDescription[1].file.url});
+      this.setState({Object:this.state.MyList[val-1].node.firstdescription.content[0].content[0].value})
+      this.setState({link:this.state.MyList[val-1].node.lien})
+      this.setState({open:"inherit"});
+
 
   }
 
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    console.log(this.state.imgDes)
+
+     let x = 0;
+
     return (
       <div onClick={this.ChangeState.bind(this)}>
 
-      <div id="loader" style={{display:this.state.display, height:"20vh", width:"100%",background:"#112b4d", zIndex: 1}}>
-      <img  src={loading} style={{ margin:"auto", display:this.state.display, position: "absolute", top:"25%", right: "0px", left: "0px"}} alt="loading..." />
-      </div>
-
-
-       <Opening value={this.state.Count} link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
+       <img src={typew}  className="typew"/>
 
         <Helmet className="Helmet-title" title={siteTitle} />
 
 
-        <img src={arrow} className="lessButton" onClick={this.LessProject.bind(this)}/>
 
-        <div style={{display:this.state.Display}} className="page-blog-wrapper" onClick={this.OpenState.bind(this)}>
+            <div className="main-gallery">
 
-       <Fade top>
-        <ArticleContainer  name={this.state.View} counting={this.state.Count} title={this.state.Object} image={this.state.Img} />
-       </Fade>
+              {this.state.MyList.map((card) => {
+
+               x = x+1;
+
+
+                return(<div className="contain-card">
+
+                  <Fade top>
+                  <div  id={x} className="card"  style={{backgroundImage: 'url(' + card.node.heroImage.file.url + ')'}}>
+                  <div id={x} className="card-container" onClick={this.handleChange.bind(this)}><h1 id={x} className="heading heading--stroke heading--shadow" onClick={this.handleChange.bind(this)}>{card.node.title}</h1></div>
+                  </div>
+                  </Fade>
+
+                   <Opening  link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
+
+
+                  </div>
+              )}
+                      )}
+
+
         </div>
 
+         <div id="Apropos" >
+         <h2 className="copyright">À propos</h2>
+         <img  src={character} />
+         <p className="copyright">J'aime imaginer, concevoir et développer des réalisations digitales qui permettent de part leur identité visuelle et leur interactivité de se démarquer sur la grande toile.</p>
+         <h1 className="copyright">Technologies</h1>
+         <p className="copyright">React js/ React Native Expo / Three js / Ml5js / P5js / Firebase / Node js et tout ce qui touche de près ou de loin au javascript</p>
+         </div>
 
-        <img src={arrow} className="plusButton" onClick={this.MoreProject.bind(this)} />
+        <h1 className="copyright location">Où me trouver?</h1>
+        <Maps />
 
-
+        <div className="footer-div">
+        <div className="copyright">adrienblanchot©</div>
+        <div className="copyright">adblanchot@gmail.com</div>
+        <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN-footer' src={logoLN} /></a>
+        <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger-footer' src={messenger} /> </a>
+        </div>
 
       </div>
     )

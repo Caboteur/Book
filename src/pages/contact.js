@@ -5,6 +5,8 @@ import ArticlePreview from '../components/article-preview'
 import Motion from '../images/motion-web.svg'
 import Scaph from '../images/scaph3.jpg'
 import styles from './contact.css'
+import logoLN from '../images/logoLNBeige.svg'
+import messenger from '../images/messengerBeige.svg'
 
 class Contact extends React.Component {
 
@@ -15,6 +17,10 @@ class Contact extends React.Component {
     return (
       <div id="main-form">
 
+      <div className="container-logo">
+      <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
+      <a href="https://m.me/Ad-Blanchot"> <img  className='logoMessenger' src={messenger} /> </a>
+      </div>
 
     <div id="form-main">
     <div id="form-div">

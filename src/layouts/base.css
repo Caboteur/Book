@@ -4,7 +4,7 @@ body{
   background: #112b4d;
   max-width: 1100px;
   margin: auto;
-  overflow: hidden;
+
 }
 
 .classSvg{
@@ -187,9 +187,7 @@ body{
   max-width: 1000px;
   margin: auto;
 }
-html{
- background:#051d3d;
- }
+
 
 }
 
@@ -197,7 +195,6 @@ html{
 @media screen and (min-width: 2000px) {
 
   body{
-    background: #112b4d;
     height: 100vh;
     margin: auto;
     padding: 67px;

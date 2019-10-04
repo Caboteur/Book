@@ -26,3 +26,46 @@
     margin-top: 25%;
   }
 }
+
+.logoLN{
+  width: 5%;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 15px;
+  max-width: 60px;
+}
+
+
+.logoMessenger{
+  width: 6%;
+  right: 10px;
+  position: absolute;
+  bottom: 10px;
+  padding: 15px;
+  max-width: 70px;
+}
+
+.logoMessenger:hover{
+  opacity: 0.5;
+}
+
+.logoLN:hover{
+  opacity: 0.5;
+}
+
+.container-logo-bottom{
+  max-width: 1000px;
+}
+
+
+@media screen and (max-width: 640px) {
+  .logoMessenger{
+    width: 15%;
+  }
+
+  .logoLN{
+    width: 13%;
+  }
+
+}
