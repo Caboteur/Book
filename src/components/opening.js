@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import styles from './opening.css'
 
-
 const Introduction = styled.div`
    width: 60%;
    height:100vh;
