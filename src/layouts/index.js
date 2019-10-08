@@ -38,7 +38,7 @@ class Template extends React.Component {
 
       <Helmet>
           <meta charSet="utf-8" />
-          <title>Adrien Blanchot  - Portfolio - développeur et designer web</title>
+          <title>Adrien Blanchot  - Portfolio - développeur et designer web - React , React Native , Three js</title>
           <link rel="icon"  href="./windowLogo.png" />
           <html lang="fr" />
           <meta name="description" content="Portfolio d'Adrien Blanchot: creative développeur et designer freelance" />
@@ -49,7 +49,7 @@ class Template extends React.Component {
           <meta name="google-site-verification" content="_pKFsMSAaiTo-LIUXH1amlbfwhs3xTvQwresCtaCkXg" />
           <script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js'></script>
           <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
-        
+
       </Helmet>
 
           <Navigation />

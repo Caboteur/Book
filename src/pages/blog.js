@@ -90,11 +90,11 @@ componentDidMount(){
 
                 return(<div className="contain-card">
 
-                  <Fade top>
+                
                   <div  id={x} className="card"  style={{backgroundImage: 'url(' + card.node.heroImage.file.url + ')'}}>
                   <div id={x} className="card-container" onClick={this.handleChange.bind(this)}><h1 id={x} className="heading heading--stroke heading--shadow" onClick={this.handleChange.bind(this)}>{card.node.title}</h1></div>
                   </div>
-                  </Fade>
+
 
                    <Opening  link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 
@@ -111,7 +111,7 @@ componentDidMount(){
          <img  src={character} />
          <p className="copyright">J'aime imaginer, concevoir et développer des réalisations digitales qui permettent de part leur identité visuelle et leur interactivité de se démarquer sur la grande toile. Que ça soit des visualisations en 3d ou du machine learning, j'aime mettre en oeuvre les technologies les plus récentes pour créer un produit digital innovant.</p>
          <h1 className="copyright">Technologies</h1>
-         <p className="copyright">React js/ React Native Expo / Three js / Ml5js /Api rest / P5js / Firebase / Node js et tout ce qui touche de près ou de loin au javascript</p>
+         <p className="copyright">React js/ React Native Expo / Three js / Ml5js / Api rest /  P5js / Firebase / Node js et tout ce qui touche de près ou de loin au javascript</p>
          </div>
 
         <h1 className="copyright location">Où me trouver?</h1>
