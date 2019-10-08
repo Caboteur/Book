@@ -38,7 +38,7 @@ class Template extends React.Component {
 
       <Helmet>
           <meta charSet="utf-8" />
-          <title>Adrien Blanchot  - Portfolio - développeur et designer web - React , React Native , Three js</title>
+          <title>Adrien Blanchot  - Portfolio - développeur et designer web - React , React Native , Three js, Gatsby js</title>
           <link rel="icon"  href="./windowLogo.png" />
           <html lang="fr" />
           <meta name="description" content="Portfolio d'Adrien Blanchot: creative développeur et designer freelance" />
