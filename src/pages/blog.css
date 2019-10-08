@@ -310,6 +310,7 @@ margin-top: 17%;
 
   #Apropos{
   margin-top: Opx;
+
   }
 
   .card{
@@ -336,6 +337,11 @@ margin-top: 17%;
   width: 50%;
   display: block;
   margin: auto;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
 }
 
 .location{
