@@ -12,10 +12,13 @@ import Opening from '../components/opening'
 import loading from '../images/loader.svg'
 import typew from '../images/typew.svg'
 import character from '../images/character.svg'
+import Pulse from 'react-reveal/Pulse';
+import RubberBand from 'react-reveal/RubberBand';
 import Fade from 'react-reveal/Fade';
 import logoLN from '../images/logoLNBeige.svg'
 import messenger from '../images/messengerBeige.svg'
 import Maps from '../components/maps.js'
+
 
 class BlogIndex extends React.Component {
   constructor(){
@@ -89,11 +92,12 @@ componentDidMount(){
 
 
                 return(<div className="contain-card">
-
-                
+                <Pulse>
                   <div  id={x} className="card"  style={{backgroundImage: 'url(' + card.node.heroImage.file.url + ')'}}>
                   <div id={x} className="card-container" onClick={this.handleChange.bind(this)}><h1 id={x} className="heading heading--stroke heading--shadow" onClick={this.handleChange.bind(this)}>{card.node.title}</h1></div>
                   </div>
+                  </Pulse>
+
 
 
                    <Opening  link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
@@ -108,10 +112,16 @@ componentDidMount(){
 
          <div id="Apropos" >
          <h2 className="copyright">À propos</h2>
+         <RubberBand>
          <img  src={character} />
+         </RubberBand>
+         <Fade left>
          <p className="copyright">J'aime imaginer, concevoir et développer des réalisations digitales qui permettent de part leur identité visuelle et leur interactivité de se démarquer sur la grande toile. Que ça soit des visualisations en 3d ou du machine learning, j'aime mettre en oeuvre les technologies les plus récentes pour créer un produit digital innovant.</p>
+         </Fade>
          <h1 className="copyright">Technologies</h1>
+         <Fade right>
          <p className="copyright">React js/ React Native Expo / Three js / Ml5js / Api rest /  P5js / Firebase / Node js et tout ce qui touche de près ou de loin au javascript</p>
+         </Fade>
          </div>
 
         <h1 className="copyright location">Où me trouver?</h1>
