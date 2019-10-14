@@ -12,6 +12,7 @@ import Fade from 'react-reveal/Fade';
 import Anim from '../components/anim'
 import logoLN from '../images/logoLNBeige.svg'
 import messenger from '../images/messengerBeige.svg'
+import mouse from '../images/mouse.svg'
 
 class RootIndex extends React.Component {
 
@@ -26,6 +27,7 @@ class RootIndex extends React.Component {
        <h1>Bienvenue sur mon portfolio, je suis un développeur web et designer interactif.</h1>
     </Fade>
           </div>
+          <img className="mouseImage" src={mouse} />
         <Anim />
         <a href="https://www.linkedin.com/in/adrien-blanchot-24825487"><img className='logoLN' src={logoLN} /></a>
         <div className="bottom-foot">adblanchot@gmail.com</div>

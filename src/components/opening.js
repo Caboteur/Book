@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import styles from './opening.css'
+import ImageZoom from 'react-medium-image-zoom'
+
 
 const Introduction = styled.div`
    width: 60%;
@@ -56,6 +58,7 @@ export default class Opening extends React.Component {
          (<div>
         <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
         <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
+        
         <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
 
         </div>
