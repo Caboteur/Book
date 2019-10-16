@@ -12,10 +12,11 @@ export default class Maps extends Component {
   constructor(props: Props) {
     super(props);
     this.state = {
-      lng: -0.5667,
-      lat:  44.8333,
-      zoom: 11.5,
+      lng: 2.347,
+      lat:  48.859,
+      zoom: 11,
       location:"po"
+
 
     };
   }
