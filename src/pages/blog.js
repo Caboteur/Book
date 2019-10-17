@@ -98,8 +98,6 @@ componentDidMount(){
                   </div>
                   </Pulse>
 
-
-
                    <Opening  link={this.state.link} open={this.state.open} tile={this.state.View} para={this.state.Object} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 
 
