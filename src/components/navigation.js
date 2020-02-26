@@ -97,7 +97,7 @@ class Navigation extends React.Component {
           </li>
           <span  className="navigationItem">
             <Link name="skills"  to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom:"2px solid #fffff"} : {textDecoration:"inherit"}}>
-            {Store.languages=="En" ? (<a>About</a>):(<a>A propos</a>)}
+          <a>About</a>
             </Link>
           </span>
 
