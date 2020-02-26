@@ -90,12 +90,16 @@ class Navigation extends React.Component {
         </Link>
 
 
-
-        <Link  to="/" onClick={this.handleClick.bind(this)}>
-           <img className="Mainlogo" to="/" src={logo} />
-        </Link>
-
-
+          <li  className="navigationItem"  >
+            <Link name="realisation" className="navigationItemA" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fffff"} : {textDecoration:"inherit"}}>
+          {Store.languages=="En" ? (<p>Works</p>>):(<p>Réalisations</p>)}
+            </Link>
+          </li>
+          <span  className="navigationItem">
+            <Link name="skills"  to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom:"2px solid #fffff"} : {textDecoration:"inherit"}}>
+            {Store.languages=="En" ? (<p>Works</p>>):(<p>Réalisations</p>)}
+            </Link>
+          </span>
 
           <div id="langg" name={this.state.langue} style={{color:"white"}} className="navigationItem point" >
              <a style={Store.languages=="En" ? (styleActive):(styleNonActive)} onClick={this.handleClickEn.bind(this)}>En</a>  <a style={Store.languages=="Fr" ? (styleActive):(styleNonActive)} className="point" onClick={this.handleClickFr.bind(this)}>Fr</a>
