@@ -5,10 +5,10 @@ import Container from '../components/container'
 import Navigation from '../components/navigation.js'
 import Opening from '../components/opening'
 import styled from 'styled-components'
-
 import wave from '../images/wave.svg'
 import {Helmet} from "react-helmet";
 import cubeL from '../images/cubeL.png'
+
 
 const Background = styled.div`
    width: 100%;
@@ -18,6 +18,8 @@ const Background = styled.div`
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
 `;
+
+
 
 class Template extends React.Component {
 
@@ -39,7 +41,7 @@ class Template extends React.Component {
       <Helmet>
           <meta charSet="utf-8" />
           <title>Adrien Blanchot  - Portfolio - développeur et designer web - React , React Native , Three js, Gatsby js</title>
-          <link rel="icon"  href="./windowLogo.png" />
+          <link rel="icon"  href="./logoBeige.png" />
           <html lang="fr" />
           <meta name="description" content="Portfolio d'Adrien Blanchot: creative développeur et designer freelance" />
           <meta name="theme-color" content="#112b4d" />
@@ -51,6 +53,8 @@ class Template extends React.Component {
           <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
 
       </Helmet>
+
+
 
           <Navigation />
           <span></span>
@@ -67,7 +71,6 @@ class Template extends React.Component {
 
 
           </div>
-
 
       </div>
     )

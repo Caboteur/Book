@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
 
+.point{
+  cursor: pointer;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -21,21 +25,21 @@
 .navigationItem {
   align-items: center;
   margin: 0 1em;
-  margin-top: 2%;
+  margin-top: 3%;
+  display: inline-block;
 }
 
-.navigationItem a {
+.navigationItemA {
   color: #ffffff;
   text-decoration: none;
   display: inherit;
 }
 
 .Mainlogo{
-  width: 8%;
-width: 83%;
-max-width: 70px;
-float: left;
-position: relative;
+  width: 83%;
+  max-width: 70px;
+  float: left;
+  position: relative;
 }
 
 .Mainlogo:hover{
@@ -187,7 +191,18 @@ position: relative;
     background: wheat;
   }
 
-  .navigationItem  :hover{
+ .navigationItem a{
+   color: white;
+ }
+
+  .navigationItem a :hover{
+    color: white;
     border-left: 2px solid white;
     padding-left: 10px;
+  }
+
+#langg{
+  color: white;
+  display: inline-block;
+  float: right;
   }

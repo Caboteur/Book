@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import styles from './opening.css'
 import ImageZoom from 'react-medium-image-zoom'
+import Store from '../components/store.js'
+import {inject, observer} from 'mobx-react';
+import mobx from "mobx";
 
 
 const Introduction = styled.div`
@@ -28,6 +31,9 @@ const Apptitle = styled.h1`
  font-size: 22px;
  `;
 
+
+
+ @observer
 export default class Opening extends React.Component {
   constructor(){
     super();
@@ -58,8 +64,10 @@ export default class Opening extends React.Component {
          (<div>
         <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
         <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
-        
-        <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+
+        {Store.languages="En" ? (
+            <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
+        ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
 
         </div>
       ):  this.props.tile === "Les Saisons" ?(<div>
@@ -71,7 +79,9 @@ export default class Opening extends React.Component {
         (<div>
           <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
           <img style={{display:'none'}}  />
-          <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+          {Store.languages=="En" ? (
+              <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
+          ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
 
           </div>
         ) :
@@ -80,7 +90,10 @@ export default class Opening extends React.Component {
           <div>
             <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
             <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
-            <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>
+            {Store.languages=="En" ? (
+                <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
+            ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
+
 
             </div>
         )

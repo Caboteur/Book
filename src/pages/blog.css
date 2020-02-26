@@ -1,4 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+
+.mouseImage{
+  position: absolute;
+    z-index: 5;
+    width: 95px;
+    left: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 26%;
+    -webkit-animation: fadeAnim 1.9s infinite;
+    -moz-animation: fadeAnim 1.9s infinite;
+    -o-animation: fadeAnim 1.9s infinite;
+    animation: fadeAnim 1.9s infinite;
+
+}
+
+@keyframes fadeAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
+.typewriter h1 {
+  width: 63%;
+  color: #ffffff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  text-align: center;
+  font-family: 'B612 Mono', monospace;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .typewriter h1 {
+    width: 70%;
+    color: #ffffff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    font-family: 'B612 Mono', monospace;
+    font-size: 16px;
+    margin-top: 25%;
+  }
+}
+
+.logoLN{
+  width: 17%;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 15px;
+  max-width: 80px;
+}
+
+
+.logoMessenger{
+  width: 17%;
+      right: 10px;
+      position: absolute;
+      bottom: 10px;
+      padding: 15px;
+      max-width: 89px;
+
+}
+
+.logoMessenger:hover{
+  opacity: 0.5;
+}
+
+.logoLN:hover{
+  opacity: 0.5;
+}
+
+.container-logo-bottom{
+  max-width: 1000px;
+}
+
+
+@media screen and (max-width: 640px) {
+  .logoMessenger{
+    width: 15%;
+  }
+
+  .logoLN{
+    width: 13%;
+  }
+
+}
+
 
 .page-blog-wrapper{
     height: 62vh;

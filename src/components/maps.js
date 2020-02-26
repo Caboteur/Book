@@ -31,14 +31,6 @@ export default class Maps extends Component {
       zoom
     });
 
-
-
-
-
-
-
-
-
     map.on('move', () => {
       const { lng, lat } = map.getCenter();
 

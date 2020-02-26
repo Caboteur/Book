@@ -2,6 +2,7 @@ import React from "react";
 
 
 
+
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
@@ -28,6 +29,7 @@ module.exports = class HTML extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width,initial-scale=1">
+          <meta name="google-site-verification" content="StgtXtjYO6z2_SiQGrykFHp_JVxU85r7ydbKNqBkzck" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
 
           <script>

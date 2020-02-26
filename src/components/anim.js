@@ -4,8 +4,14 @@ import styles from './anim.css'
 import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
 const OrbitControls = require('three-orbitcontrols')
 import {TweenMax} from "gsap";
+import {inject, observer} from 'mobx-react';
+import mobx from "mobx";
+import Store from "./store.js"
 
- export default class Anim extends Component {
+
+@observer
+export default class Anim extends Component {
+
 
    componentDidMount() {
      this.init();
@@ -20,7 +26,8 @@ import {TweenMax} from "gsap";
      this.fogConfig = {
        color: '#112b4d',
        near: 100,
-       far: 150
+       far: 150,
+
      };
 
      this.width = window.innerWidth;
@@ -147,23 +154,25 @@ import {TweenMax} from "gsap";
    }
 
    onLoadModelsComplete(obj) {
-     this.models = [...obj.children].map((model) => {
-       const scale = .01;
-
-       model.scale.set(scale, scale, scale);
-       model.position.set(0, -14, 0);
-       model.receiveShadow = true;
-       model.castShadow = true;
-
-       return model;
-     });
-
-     this.draw();
 
      setTimeout(() => {
+       Store.loaded();
+       this.models = [...obj.children].map((model) => {
+
+         const scale = .01;
+
+         model.scale.set(scale, scale, scale);
+         model.position.set(0, -14, 0);
+         model.receiveShadow = true;
+         model.castShadow = true;
+
+         return model;
+       });
+
+       this.draw();
 
        this.showBuildings();
-     }, 500);
+     }, 1500);
 
 
 
@@ -194,11 +203,14 @@ import {TweenMax} from "gsap";
      }).reverse();
    }
 
-   loadModels(name, callback) {
+     loadModels(name, callback) {
      const objLoader = new THREE.OBJLoader();
 
-     objLoader.load(name, callback);
+
+
+     objLoader.load(name, callback)
    }
+
 
    draw() {
      const boxSize = 3;
@@ -253,7 +265,8 @@ import {TweenMax} from "gsap";
 
 	render() {
 		return(
-			<div className="anch" ref={ref => (this.el = ref)} />
+
+			<div className="anch"  ref={ref => (this.el = ref)} />
 
 		)
 	}
