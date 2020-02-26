@@ -25,7 +25,6 @@
 .navigationItem {
   align-items: center;
   margin: 0 1em;
-  margin-top: 3%;
   display: inline-block;
 }
 
@@ -205,4 +204,5 @@
   color: white;
   display: inline-block;
   float: right;
+  margin-top: 3%;
   }

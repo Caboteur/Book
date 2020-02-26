@@ -92,12 +92,12 @@ class Navigation extends React.Component {
 
           <li  className="navigationItem"  >
             <Link name="realisation" className="navigationItemA" to="/blog/" onClick={this.handleClick.bind(this)} style={this.state.point == "realisation"? {textDecoration:"none", borderBottom: "2px solid #fffff"} : {textDecoration:"inherit"}}>
-          {Store.languages=="En" ? (<p>Works</p>>):(<p>Réalisations</p>)}
+          {Store.languages=="En" ? (<p>Works</p>):(<p>Réalisations</p>)}
             </Link>
           </li>
           <span  className="navigationItem">
             <Link name="skills"  to="/blog/#Apropos"  onClick={this.handleClick.bind(this)} style={this.state.point == "skills"? {textDecoration:"none", borderBottom:"2px solid #fffff"} : {textDecoration:"inherit"}}>
-            {Store.languages=="En" ? (<p>Works</p>>):(<p>Réalisations</p>)}
+            {Store.languages=="En" ? (<p>About</p>):(<p>A propos</p>)}
             </Link>
           </span>
 
