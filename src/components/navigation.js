@@ -91,9 +91,9 @@ class Navigation extends React.Component {
 
 
 
-  <Link  to="/" onClick={this.handleClick.bind(this)}>
-            <a>Works</a>
-            </Link>
+        <Link  to="/" onClick={this.handleClick.bind(this)}>
+           <img className="Mainlogo" to="/" src={logo} />
+        </Link>
 
 
 
