@@ -2,7 +2,7 @@ import mobx, {observable, action} from 'mobx';
 
 class Store {
 
-  @observable languages = "Fr";
+  @observable languages = "En";
   @observable display = "inherit";
   @observable loading = "inherit";
   @observable obj =false;
