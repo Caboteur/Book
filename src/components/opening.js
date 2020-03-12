@@ -39,8 +39,24 @@ export default class Opening extends React.Component {
     super();
     this.state= {
       Wid:"50%",
+      imageStatus:"loading",
+      show:"none"
     }
   }
+
+  componentDidMount(){
+    console.log(this.state.imageStatus)
+  }
+
+  handleImageLoaded() {
+   this.setState({ imageStatus: "loaded", show:"inherit" });
+
+ }
+
+ handleImageErrored() {
+   this.setState({ imageStatus: "failed to load" });
+     console.log(this.state.imageStatus)
+ }
 
 
   render() {
@@ -62,10 +78,10 @@ export default class Opening extends React.Component {
         <div className="div-para">{this.props.para}</div>
         {this.props.tile === "Fler Culture" ?
          (<div>
-        <img style={{width: "90%"}} className="img-opening" src={this.props.img} />
-        <img style={{width: "90%"}} className="img-opening" src={this.props.img1} />
+        <img style={{width: "90%"}} className="img-opening"  onLoad={this.handleImageLoaded.bind(this)} src={this.props.img} />
+        <img style={{width: "90%"}} className="img-opening"  onLoad={this.handleImageLoaded.bind(this)} src={this.props.img1} />
 
-        {Store.languages="En" ? (
+        {Store.languages=="En" ? (
             <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
         ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
 
@@ -88,8 +104,8 @@ export default class Opening extends React.Component {
 
         (
           <div>
-            <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img} />
-            <img style={{width: this.state.Wid}} className="img-opening" src={this.props.img1} />
+            <img style={{width: this.state.Wid}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img} />
+            <img style={{width: this.state.Wid}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img1} />
             {Store.languages=="En" ? (
                 <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
             ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
