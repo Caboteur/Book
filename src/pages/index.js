@@ -3,7 +3,6 @@
   import Helmet from 'react-helmet'
   import animation from '../images/animation.json'
   import Blog from './blog.js'
-  import Fade from 'react-reveal/Fade';
   import Anim from '../components/anim'
   import logoLN from '../images/logoLNBeige.svg'
   import messenger from '../images/messengerBeige.svg'
