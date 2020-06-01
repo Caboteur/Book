@@ -45,11 +45,10 @@ export default class Opening extends React.Component {
     }
   }
 
-  componentDidMount(){
-    console.log(this.state.imageStatus)
-  }
+
 
   handleImageLoaded() {
+    
    this.setState({ imageStatus: "loaded", show:"inherit" });
 
  }
@@ -67,7 +66,7 @@ export default class Opening extends React.Component {
     }
 
 
-    const ratio = "50%";
+
 
     return (
       <Introduction value={this.props.value} id="opening-introduction" style={style}>

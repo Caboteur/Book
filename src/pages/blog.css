@@ -42,7 +42,7 @@
   margin-top: 40px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 940px) {
   .typewriter h1 {
     width: 70%;
     color: #ffffff;
@@ -57,7 +57,7 @@
 }
 
 .logoLN{
-  width: 17%;
+  width: 19%;
   position: absolute;
   bottom: 8px;
   left: 8px;
@@ -67,7 +67,7 @@
 
 
 .logoMessenger{
-  width: 17%;
+  width: 20%;
       right: 10px;
       position: absolute;
       bottom: 10px;
@@ -89,16 +89,7 @@
 }
 
 
-@media screen and (max-width: 640px) {
-  .logoMessenger{
-    width: 15%;
-  }
 
-  .logoLN{
-    width: 13%;
-  }
-
-}
 
 
 .page-blog-wrapper{

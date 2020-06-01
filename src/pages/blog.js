@@ -96,17 +96,7 @@ componentDidMount(){
 
                x = x+1;
 
-
-                 var img = new Image();
-                 let Ratio = "50%";
-               img.onload = function() {
-               if(this.width > this.height){
-                 Ratio = "50%";
-               }else{
-                  Ratio = "90%";
-               }
-               }
-               img.src = card.node.heroImage.file.url;
+               let Ratio = "50%";
 
 
                 return(<div className="contain-card">
