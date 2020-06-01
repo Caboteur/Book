@@ -124,13 +124,13 @@ body{
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 940px) {
   .logoMessenger{
-    width: 15%;
+    width: 18%;
   }
 
   .logoLN{
-    width: 13%;
+    width: 20%;
   }
 
   .img-wrapper{

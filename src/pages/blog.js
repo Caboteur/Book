@@ -97,6 +97,18 @@ componentDidMount(){
                x = x+1;
 
 
+                 var img = new Image();
+                 let Ratio = "50%";
+               img.onload = function() {
+               if(this.width > this.height){
+                 Ratio = "50%";
+               }else{
+                  Ratio = "90%";
+               }
+               }
+               img.src = card.node.heroImage.file.url;
+
+
                 return(<div className="contain-card">
                 <Pulse>
                   <div  id={x} className="card"  style={{backgroundImage: 'url(' + card.node.heroImage.file.url + ')'}}>
@@ -104,7 +116,7 @@ componentDidMount(){
                   </div>
                   </Pulse>
 
-                   <Opening  link={this.state.link} open={this.state.open} tile={this.state.View} para={Store.languages=="Fr"? (this.state.Object) : (this.state.ObjectEn)} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
+                   <Opening ratio={Ratio} link={this.state.link} open={this.state.open} tile={this.state.View} para={Store.languages=="Fr"? (this.state.Object) : (this.state.ObjectEn)} click={this.ChangeState.bind(this)} img={this.state.imgDes} img1={this.state.imgDes2} />
 
 
                   </div>

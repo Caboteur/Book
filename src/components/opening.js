@@ -29,6 +29,7 @@ const Apptitle = styled.h1`
  text-align:center;
  color:#112b4d;
  font-size: 22px;
+ margin-right: 31px;
  `;
 
 
@@ -66,12 +67,12 @@ export default class Opening extends React.Component {
     }
 
 
+    const ratio = "50%";
 
     return (
       <Introduction value={this.props.value} id="opening-introduction" style={style}>
         <div className="border">
        <Close className="close" onClick={this.props.click}></Close>
-
        <Apptitle style={{color:"#fff1e0"}}>{this.props.tile}</Apptitle>
 
 
@@ -104,8 +105,8 @@ export default class Opening extends React.Component {
 
         (
           <div>
-            <img style={{width: this.state.Wid}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img} />
-            <img style={{width: this.state.Wid}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img1} />
+            <img style={{width: this.props.ratio}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img} />
+            <img style={{width: this.props.ratio}} className="img-opening" onLoad={this.handleImageLoaded.bind(this)} src={this.props.img1} />
             {Store.languages=="En" ? (
                 <a href={this.props.link}><div className="button-link" href={this.props.link}>Link</div></a>
             ) : (  <a href={this.props.link}><div className="button-link" href={this.props.link}>Lien</div></a>)}
