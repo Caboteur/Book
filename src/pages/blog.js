@@ -124,7 +124,7 @@ componentDidMount(){
          <img  src={character} />
          </RubberBand>
          <Fade left>
-         {Store.languages=="Fr" ? (<p className="copyright">J'aime imaginer, concevoir et développer des réalisations digitales qui permettent de part leur identité visuelle et leur interactivité de se démarquer sur la grande toile. Que ça soit des visualisations en 3d ou du machine learning, j'aime mettre en oeuvre les technologies les plus récentes pour créer un produit digital innovant.</p>
+         {Store.languages=="Fr" ? (<p className="copyright">J'aime imaginer, concevoir et développer des réalisations digitales qui permettent par leur identité visuelle et leur interactivité de se démarquer sur la grande toile. Que ça soit des visualisations en 3d ou du machine learning, j'aime mettre en oeuvre les technologies les plus récentes pour créer un produit digital innovant.</p>
 )
          :(<p className="copyright">I like to imagine, design and develop digital creations that allow their visual identity and interactivity to stand out on the big canvas. Whether it's 3D visualizations or machine learning, I like to use the most recent technologies to create an innovative digital product.</p>)}
 
